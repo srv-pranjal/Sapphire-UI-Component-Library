@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pranjal Srivastava" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/tomorrow-night-blue.min.css
+      "
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../styles/alert.css" />
+    <title>Alert | Documentation</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <div class="header__brand flex">
+        <em>
+          <h3>
+            <a href="../index.html">SAPPHIRE UI</a>
+          </h3>
+        </em>
+        <nav class="header__nav flex">
+          <a href="../index.html">Home</a>
+          <a href="docs.html" class="active">Documentation</a>
+        </nav>
+      </div>
+      <nav class="header__nav flex">
+        <a target="_blank" href="https://twitter.com/srvpranjal">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/pranjal-srivastava-5245381a9/"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://github.com/srv-pranjal">
+          <i class="fa fa-github"></i>
+        </a>
+      </nav>
+    </header>
+    <div class="flex">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <h2>Components</h2>
+          <hr />
+        </div>
+        <div class="sidebar__list flex flex-col">
+          <a class="sidebar__list-item sidebar__list-item--active" href="alert.html" role="button"
+            >Alert</a
+          >
+          <a class="sidebar__list-item" href="" role="button">Avatar</a>
+          <a class="sidebar__list-item" href="" role="button">Badges</a>
+          <a class="sidebar__list-item" href="button.html" role="button"
+            >Buttons</a
+          >
+          <a class="sidebar__list-item" href="" role="button">Cards</a>
+          <a class="sidebar__list-item" href="" role="button">Image</a>
+          <a class="sidebar__list-item" href="" role="button">Input</a>
+        </div>
+      </aside>
+      <main class="component">
+        <h1 class="component__heading">Alert</h1>
+        <p class="component__description">
+          An alert displays a short, important message in a way that attracts
+          the user's attention without interrupting the user's task.
+        </p>
+        <h2 class="component__sub-heading">Standard Alerts</h2>
+        <p class="component__sub-description">
+          There are 6 types of available alerts which comprise of standard light
+          and dark alerts, success alerts, error alerts, warning alerts and info
+          alerts. These alerts can be used directly by adding the class
+          <span class="highlight">alert</span> along with the additional alert
+          type class -
+          <span class="highlight"
+            >alert--dark, alert--light, alert--success, alert--danger,
+            alert--warning, alert--info</span
+          >.<br />
+          You can copy example html code from below code snippet.
+        </p>
+        <section class="component__display flex-col">
+          <div class="alert alert--dark" role="alert">
+            A standard dark alert
+          </div>
+          <div class="alert alert--light" role="alert">
+            A standard light alert
+          </div>
+          <div class="alert alert--success" role="alert">
+            A standard success alert
+          </div>
+          <div class="alert alert--danger" role="alert">
+            A standard danger alert
+          </div>
+          <div class="alert alert--warning" role="alert">
+            A standard warning alert
+          </div>
+          <div class="alert alert--info" role="alert">
+            A standard info alert
+          </div>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;div class="alert alert--dark" role="alert"&gt;
+      A standard dark alert
+    &lt;/div&gt;
+
+    &lt;div class="alert alert--light" role="alert"&gt;
+      A standard light alert
+    &lt;/div&gt;
+          
+    &lt;div class="alert alert--success" role="alert">
+      A standard success alert
+    &lt;/div&gt;
+
+    &lt;div class="alert alert--danger" role="alert"&gt;
+      A standard danger alert
+    &lt;/div&gt;
+
+    &lt;div class="alert alert--warning" role="alert"&gt;
+      A standard warning alert
+    &lt;/div&gt;
+
+    &lt;div class="alert alert--info" role="alert"&gt;
+      A standard info alert
+    &lt;/div&gt;
+        </code></pre>
+
+        <h2>Alerts With Icon</h2>
+        <p class="component__sub-description">
+          Alerts can also have icons. This can be built by using the classes
+          mentioned above along with the icons embedded in <em>i</em> tag.<br />
+          Check out the below examples which are using icons in the success,
+          error, warning and info alerts.
+        </p>
+        <section class="component__display flex-col">
+          <div class="alert alert--success" role="alert">
+            <i class="fa fa-check-circle"></i>
+            A success alert with icon
+          </div>
+          <div class="alert alert--danger" role="alert">
+            <i class="fa fa-exclamation-circle"></i>
+            A danger alert with icon
+          </div>
+          <div class="alert alert--warning" role="alert">
+            <i class="fa fa-warning"></i>
+            A warning alert with icon
+          </div>
+          <div class="alert alert--info" role="alert">
+            <i class="fa fa-info-circle"></i>
+            A info alert with icon
+          </div>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;div class="alert alert--success" role="alert"&gt;
+      &lt;i class="fa fa-check-circle"&gt;&lt;/i&gt;
+      A success alert with icon
+    &lt;/div&gt;
+
+    &lt;div class="alert alert--danger" role="alert"&gt;
+      &lt;i class="fa fa-exclamation-circle"&gt;&lt;/i&gt;
+      A danger alert with icon
+    &lt;/div&gt;
+
+    &lt;div class="alert alert--warning" role="alert"&gt;
+      &lt;i class="fa fa-warning"&gt;&lt;/i&gt;
+      A warning alert with icon
+    &lt;/div&gt;
+    
+    &lt;div class="alert alert--info" role="alert"&gt;
+      &lt;i class="fa fa-info-circle"&gt;&lt;/i&gt;
+      A info alert with icon
+    &lt;/div&gt;
+          </code></pre>
+
+        <h2>Alerts With Close Button</h2>
+        <p class="component__sub-description">
+          Alerts can also have a close button with the class name
+          <span class="highlight">alert__btn-close</span> as shown in the code
+          snippet below.
+        </p>
+        <section class="component__display flex-col">
+          <div class="alert alert--success" role="alert">
+            <i class="fa fa-check-circle"></i>
+            A sucess alert with close button
+            <i class="fa fa-close alert__btn-close"></i>
+          </div>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;div class="alert alert--warning" role="alert"&gt;
+      &lt;i class="fa fa-warning"&gt;&lt;/i&gt;
+      A warning alert with icon
+      &lt;i class="fa fa-close alert__btn-close"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+          </code></pre>
+      </main>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

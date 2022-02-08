@@ -1,0 +1,36 @@
+@import "./main.css";
+
+.alert {
+  padding: 1rem;
+  border-radius: 0.4rem;
+  display: flex;
+  gap: 1rem;
+}
+.alert--success {
+  background-color: var(--light-success-color);
+  color: var(--dark-success-color);
+}
+.alert--danger {
+  background-color: var(--light-danger-color);
+  color: var(--dark-danger-color);
+}
+.alert--warning {
+  background-color: var(--light-warning-color);
+  color: var(--dark-warning-color);
+}
+.alert--info {
+  background-color: var(--light-info-color);
+  color: var(--dark-info-color);
+}
+.alert--light {
+  background-color: var(--complimentary-text-color);
+  color: var(--secondary-color);
+}
+.alert--dark {
+  background-color: var(--secondary-color);
+  color: var(--complimentary-text-color);
+}
+.alert__btn-close {
+  margin-left: auto;
+  cursor: pointer;
+}

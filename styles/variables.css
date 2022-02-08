@@ -5,4 +5,16 @@
   --secondary-color: #343a40;
   --dark-secondary-color: #2a2e33;
   --complimentary-text-color: #f1f1f1;
+  --success-color: #3c8237;
+  --light-success-color: #77e290;
+  --dark-success-color: #0b6305;
+  --danger-color: #c1423b;
+  --light-danger-color: #ff939c;
+  --dark-danger-color: #b1130a;
+  --warning-color: #e19238;
+  --light-warning-color: #fde68a;
+  --dark-warning-color: #da7706;
+  --info-color: #3d7e9d;
+  --light-info-color: #3dcfe6;
+  --dark-info-color: #0c5e85;
 }
