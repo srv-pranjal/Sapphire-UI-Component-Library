@@ -6,10 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Pranjal Srivastava" />
     <title>Sapphire UI | Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <p>Sapphire UI | Landing Page</p>
-    <a href="pages/docs.html">Documentation</a>
+    <header class="header flex">
+      <div class="header__brand flex">
+        <em>
+          <h3>
+            <a href="index.html">SAPPHIRE UI</a>
+          </h3>
+        </em>
+        <nav class="header__nav flex">
+          <a href="index.html" class="active">Home</a>
+          <a href="pages/docs.html">Documentation</a>
+        </nav>
+      </div>
+      <nav class="header__nav flex">
+        <a target="_blank" href="https://twitter.com/srvpranjal">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/pranjal-srivastava-5245381a9/"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://github.com/srv-pranjal">
+          <i class="fa fa-github"></i>
+        </a>
+      </nav>
+    </header>
+    <main class="landing-page flex center-cross-axis">
+      <div class="landing-page__text-container">
+        <h1>Build Your UI Faster</h1>
+        <p>
+          Start building your projects super fast with
+          <em>Sapphire UI</em> which provides user-friendly and customizable
+          components.
+        </p>
+        <div class="flex">
+          <a href="#" class="btn">Installation</a>
+          <a href="./pages/docs.html" class="btn">Documentation</a>
+        </div>
+      </div>
+      <div class="landing-page__img-container">
+        <img
+          src="assets/component-library-illustration.svg"
+          alt="Component Library Illustration"
+        />
+      </div>
+    </main>
   </body>
 </html>
