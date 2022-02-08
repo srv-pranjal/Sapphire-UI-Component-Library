@@ -10,3 +10,7 @@
 .center-main-axis {
   justify-content: center;
 }
+.highlight {
+  color: var(--primary-color);
+  font-weight: bold;
+}

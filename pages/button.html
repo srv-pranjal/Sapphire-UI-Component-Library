@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pranjal Srivastava" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/tomorrow-night-blue.min.css
+      "
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../styles/button.css" />
+    <title>Buttons | Documentation</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <div class="header__brand flex">
+        <em>
+          <h3>
+            <a href="../index.html">SAPPHIRE UI</a>
+          </h3>
+        </em>
+        <nav class="header__nav flex">
+          <a href="../index.html">Home</a>
+          <a href="docs.html" class="active">Documentation</a>
+        </nav>
+      </div>
+      <nav class="header__nav flex">
+        <a target="_blank" href="https://twitter.com/srvpranjal">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/pranjal-srivastava-5245381a9/"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://github.com/srv-pranjal">
+          <i class="fa fa-github"></i>
+        </a>
+      </nav>
+    </header>
+    <div class="flex">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <h2>Components</h2>
+          <hr />
+        </div>
+        <div class="sidebar__list flex flex-col">
+          <a class="sidebar__list-item" href="alert.html" role="button"
+            >Alert</a
+          >
+          <a class="sidebar__list-item" href="" role="button">Avatar</a>
+          <a class="sidebar__list-item" href="" role="button">Badges</a>
+          <a
+            class="sidebar__list-item sidebar__list-item--active"
+            href="button.html"
+            role="button"
+            >Buttons</a
+          >
+          <a class="sidebar__list-item" href="" role="button">Cards</a>
+          <a class="sidebar__list-item" href="" role="button">Image</a>
+          <a class="sidebar__list-item" href="" role="button">Input</a>
+        </div>
+      </aside>
+      <main class="component">
+        <h1 class="component__heading">Buttons</h1>
+        <p class="component__description">
+          A clickable button is used to interact with the user. Buttons can be
+          used in different ways like navigating to different pages/sections,
+          submit forms, open modals, etc.
+        </p>
+        <h2 class="component__sub-heading">Solid Buttons</h2>
+        <p class="component__sub-description">
+          There are different types of solid buttons available which comprises
+          of Primary and Secondary buttons, success button, and error button.
+          These buttons can be used directly by adding the class
+          <span class="highlight">btn</span> along with the additional button
+          type class -
+          <span class="highlight"
+            >btn--primary, btn--secondary, btn--success, btn--error</span
+          >. You can also disable any button by just including the class -
+          <span class="highlight">btn--disabled</span> along with any button
+          type. <br />
+          You can copy example html code from below code snippet.
+        </p>
+        <section class="component__display center-cross">
+          <button class="btn btn--primary">Primary Button</button>
+          <button class="btn btn--secondary">Secondary Button</button>
+          <button class="btn btn--success">Success</button>
+          <button class="btn btn--error">Error</button>
+          <button class="btn btn--primary btn--disabled">Disabled</button>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;button class="btn btn--primary"&gt;Primary Button&lt;/button&gt;
+
+    &lt;button class="btn btn--secondary"&gt;Secondary Button&lt;/button&gt;
+
+    &lt;button class="btn btn--success"&gt;Success&lt;/button&gt;
+
+    &lt;button class="btn btn--error"&gt;Error&lt;/button&gt;
+    
+    &lt;button class="btn btn--primary btn--disabled"&gt;Disabled&lt;/button&gt;
+        </code></pre>
+
+        <h2>Outlined Buttons</h2>
+        <p class="component__sub-description">
+          Sometimes we need buttons with transparent background-color. For this,
+          there are 4 types of outlined buttons available. These buttons can be
+          used directly by replacing the default modifier classes with
+          <span class="highlight"
+            >btn--outline-primary, btn--outline-secondary, btn--outline-success,
+            btn--outline-error</span
+          >
+          to remove background colors on buttons.
+        </p>
+        <section class="component__display">
+          <button class="btn btn--outline-primary">Primary Button</button>
+          <button class="btn btn--outline-secondary">Secondary Button</button>
+          <button class="btn btn--outline-success">Success</button>
+          <button class="btn btn--outline-error">Error</button>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;button class="btn btn--outline-primary"&gt;Primary Button&lt;/button&gt;
+
+    &lt;button class="btn btn--outline-secondary"&gt;Secondary Button&lt;/button&gt;
+
+    &lt;button class="btn btn--outline-success"&gt;Success&lt;/button&gt;
+    
+    &lt;button class="btn btn--outline-error"&gt;Error&lt;/button&gt;
+          </code></pre>
+
+        <h2>Link Buttons</h2>
+        <p class="component__sub-description">
+          Links can be used as buttons by using the standard button classes as
+          mentioned above, enclosed in <em>anchor</em> tag along with
+          <em>role="button"</em> to specify the purpose of links. A text link
+          button can be built by using the classes
+          <span class="highlight">btn btn--link-text</span>.<br />
+          Check out below examples of Link Buttons
+        </p>
+        <section class="component__display">
+          <a href="#" class="btn btn--primary" role="button"
+            >Solid Link Button</a
+          >
+          <a href="#" class="btn btn--outline-primary" role="button"
+            >Outlined Link Button</a
+          >
+          <a href="#" class="btn btn--link-text" role="button"
+            >Text Link Button</a
+          >
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;a class="btn btn--primary" role="button" href="#"&gt;Solid Link Button&lt;/a&gt;
+    
+    &lt;a class="btn btn--outline-primary" role="button" href="#"&gt;Outlined Link Button&lt;/a&gt;
+
+    &lt;a href="#" class="btn btn--link-text" role="button"&gt;Text Link Button&lt;/a&gt;
+          </code></pre>
+
+        <h2>Icon Buttons</h2>
+        <p class="component__sub-description">
+          Buttons can also have icons. This can be built by using the classes
+          mentioned above along with the icons embedded in i tag with class name
+          - <span class="highlight">btn__icon</span>. Check out the below
+          examples which are using icons.
+        </p>
+        <section class="component__display">
+          <button class="btn btn--primary">
+            <i class="fa fa-home btn__icon"></i>
+            Home
+          </button>
+          <button class="btn btn--outline-primary">
+            <i class="fa fa-trash btn__icon"></i>
+            Trash
+          </button>
+          <button class="btn btn--success">
+            <i class="fa fa-check-circle btn__icon"></i>
+            Accept
+          </button>
+          <button class="btn btn--outline-error">
+            <i class="fa fa-close btn__icon"></i>
+            Reject
+          </button>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;button class="btn btn--primary"&gt;
+        &lt;i class="fa fa-home btn__icon"&gt;&lt;/i&gt;
+        Home
+    &lt;/button&gt;
+
+    &lt;button class="btn btn--outline-primary"&gt;
+        &lt;i class="fa fa-trash btn__icon"&gt;&lt;/i&gt;
+        Trash
+    &lt;/button&gt;
+
+    &lt;button class="btn btn--success"&gt;
+        &lt;i class="fa fa-check-circle btn__icon"&gt;&lt;/i&gt;
+        Accept
+    &lt;/button&gt;
+
+    &lt;button class="btn btn--outline-error"&gt;
+        &lt;i class="fa fa-close btn__icon"&gt;&lt;/i&gt;
+        Reject
+    &lt;/button&gt;
+        </code></pre>
+
+        <h2>Floating Action Buttons</h2>
+        <p class="component__sub-description">
+          A floating action button (FAB) performs the primary, or most common,
+          action on a screen. A FAB can be built using the standard button
+          classes mentioned above along with the class -
+          <span class="highlight">btn--float</span>.
+        </p>
+        <section class="component__display">
+          <button class="btn btn--primary btn--float">
+            <i class="fa fa-arrow-up btn__icon"></i>
+          </button>
+          <button class="btn btn--outline-secondary btn--float">
+            <i class="fa fa-camera btn__icon"></i>
+          </button>
+          <button class="btn btn--outline-primary btn--float">
+            <i class="fa fa-share btn__icon"></i>
+          </button>
+          <button class="btn btn--secondary btn--float">
+            <i class="fa fa-envelope btn__icon"></i>
+          </button>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;button class="btn btn--primary btn--float"&gt;
+        &lt;i class="fa fa-arrow-up btn__icon"&gt;&lt;/i&gt;
+    &lt;/button&gt;
+
+    &lt;button class="btn btn--outline-secondary btn--float"&gt;
+        &lt;i class="fa fa-camera btn__icon"&gt;&lt;/i&gt;
+    &lt;/button&gt;
+
+    &lt;button class="btn btn--outline-primary btn--float"&gt;
+        &lt;i class="fa fa-share btn__icon"&gt;&lt;/i&gt;
+    &lt;/button&gt;
+
+    &lt;button class="btn btn--secondary btn--float"&gt;
+        &lt;i class="fa fa-envelope btn__icon"&gt;&lt;/i&gt;
+    &lt;/button&gt;
+        </code></pre>
+      </main>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
