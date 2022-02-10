@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pranjal Srivastava" />
+    <link rel="stylesheet" href="../styles/badge.css" />
+    <title>Badge | Documentation</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <div class="header__brand flex">
+        <em>
+          <h3>
+            <a href="../index.html">SAPPHIRE UI</a>
+          </h3>
+        </em>
+        <nav class="header__nav flex">
+          <a href="../index.html">Home</a>
+          <a href="./docs.html" class="active">Documentation</a>
+        </nav>
+      </div>
+      <nav class="header__nav flex">
+        <a target="_blank" href="https://twitter.com/srvpranjal">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/pranjal-srivastava-5245381a9/"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://github.com/srv-pranjal">
+          <i class="fa fa-github"></i>
+        </a>
+      </nav>
+    </header>
+    <div class="flex">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <h2>Components</h2>
+          <hr />
+        </div>
+        <div class="sidebar__list flex flex-col">
+          <a class="sidebar__list-item" href="./alert.html" role="button"
+            >Alert</a
+          >
+          <a class="sidebar__list-item" href="./avatar.html" role="button"
+            >Avatar</a
+          >
+          <a
+            class="sidebar__list-item sidebar__list-item--active"
+            href="./badge.html"
+            role="button"
+            >Badges</a
+          >
+          <a class="sidebar__list-item" href="./button.html" role="button"
+            >Buttons</a
+          >
+          <a class="sidebar__list-item" href="" role="button">Cards</a>
+          <a class="sidebar__list-item" href="" role="button">Image</a>
+          <a class="sidebar__list-item" href="" role="button">Input</a>
+        </div>
+      </aside>
+      <main class="component">
+        <h1 class="component__heading">Badges</h1>
+        <p class="component__description">
+          Badges are components that can be used to display either status of the
+          user or to show notification count.
+        </p>
+        <h2 class="component__sub-heading">Badge on Avatar</h2>
+        <p class="component__sub-description">
+          There are two types of badges available to display user's status
+          (online/offline). To use a badge, wrap your avatar(Image/Icon/Text) in
+          a container with class name -
+          <span class="highlight">badge</span> along with a <em>span</em> tag
+          with class name - <span class="highlight">badge-status</span>. Each
+          size of avatar have their respective sizes of badges. You can select
+          the size of avatar by including class name -
+          <span class="highlight"
+            >badge__status--lg, badge__status--md, badge__status--sm,
+            badge__status--xs</span
+          >. For selecting the type of status,you can include the class name -
+          <span class="highlight"
+            >badge__status--online, badge__status--offline</span
+          >
+          for online and offline respectively. <br />
+          Check out the below examples to understand how to build a badge on
+          avatars.
+        </p>
+        <section class="component__display center-cross-axis">
+          <div class="badge">
+            <div class="avatar avatar--xs">
+              <img
+                class="avatar__img"
+                src="https://i.pravatar.cc/300?img=8"
+                alt="Avatar X-Small"
+              />
+            </div>
+            <span
+              class="badge__status badge__status--xs badge__status--offline"
+            ></span>
+          </div>
+          <div class="badge">
+            <div class="avatar avatar--xs avatar--primary">
+              <i class="fa fa-user-o"></i>
+            </div>
+            <span
+              class="badge__status badge__status--xs badge__status--online"
+            ></span>
+          </div>
+          <div class="badge">
+            <div class="avatar avatar--sm">
+              <img
+                class="avatar__img"
+                src="https://i.pravatar.cc/300?img=4"
+                alt="Avatar Small"
+              />
+            </div>
+            <span
+              class="badge__status badge__status--sm badge__status--offline"
+            ></span>
+          </div>
+          <div class="badge">
+            <div class="avatar avatar--sm avatar--secondary">PS</div>
+            <span
+              class="badge__status badge__status--sm badge__status--online"
+            ></span>
+          </div>
+          <div class="badge">
+            <div class="avatar avatar--md">
+              <img
+                class="avatar__img"
+                src="https://i.pravatar.cc/300?img=1"
+                alt="Avatar Medium"
+              />
+            </div>
+            <span
+              class="badge__status badge__status--md badge__status--offline"
+            ></span>
+          </div>
+          <div class="badge">
+            <div class="avatar avatar--lg">
+              <img
+                class="avatar__img"
+                src="https://i.pravatar.cc/300?img=2"
+                alt="Avatar Large"
+              />
+            </div>
+            <span
+              class="badge__status badge__status--lg badge__status--online"
+            ></span>
+          </div>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;div class="badge"&gt;
+      &lt;div class="avatar avatar--xs"&gt;
+        &lt;img class="avatar__img"
+          src="https://i.pravatar.cc/300?img=8"
+          alt="Avatar X-Small"
+        /&gt;
+      &lt;/div&gt;
+      &lt;span class="badge__status badge__status--xs badge__status--offline"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class="badge"&gt;
+      &lt;div class="avatar avatar--xs avatar--primary"&gt;
+        &lt;i class="fa fa-user-o"&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;span class="badge__status badge__status--xs badge__status--online"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+
+    
+    &lt;div class="badge"&gt;
+      &lt;div class="avatar avatar--sm"&gt;
+        &lt;img class="avatar__img"
+          src="https://i.pravatar.cc/300?img=4"
+          alt="Avatar Small"
+        /&gt;
+      &lt;/div&gt;
+      &lt;span class="badge__status badge__status--sm badge__status--offline"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class="badge"&gt;
+      &lt;div class="avatar avatar--sm avatar--secondary"&gt;PS&lt;/div&gt;
+      &lt;span class="badge__status badge__status--sm badge__status--online"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class="badge"&gt;
+      &lt;div class="avatar avatar--md"&gt;
+        &lt;img class="avatar__img"
+          src="https://i.pravatar.cc/300?img=1"
+          alt="Avatar Medium"
+        /&gt;
+      &lt;/div&gt;
+      &lt;span class="badge__status badge__status--md badge__status--offline" &gt;&lt;/span&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class="badge"&gt;
+      &lt;div class="avatar avatar--lg"&gt;
+        &lt;img class="avatar__img"
+          src="https://i.pravatar.cc/300?img=2"
+          alt="Avatar Large"
+        /&gt;
+      &lt;/div&gt;
+      &lt;span class="badge__status badge__status--lg badge__status--online"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+        </code></pre>
+        <h2 class="component__sub-heading">Badges on icon</h2>
+        <p class="component__sub-description">
+          For using badges on icon as notification count, just wrap the icon in
+          a container with class name -
+          <span class="highlight">badge</span> along with a <em>span</em> tag
+          with class name -
+          <span class="highlight">badge__status badge__number</span>. <br />
+          Check out the below example of badges on icons.
+        </p>
+        <section class="component__display center-cross-baseline">
+          <div class="badge">
+            <i class="fa fa-2x fa-shopping-cart"></i>
+            <span class="badge__status badge__number">4</span>
+          </div>
+          <div class="badge">
+            <i class="fa fa-2x fa-envelope"></i>
+            <span class="badge__status badge__number">9+</span>
+          </div>
+          <div class="badge">
+            <i class="fa fa-2x fa-comment"></i>
+            <span class="badge__status badge__number">99</span>
+          </div>
+          <div class="badge">
+            <i class="fa fa-2x fa-heart"></i>
+            <span class="badge__status badge__number">1</span>
+          </div>
+          <div class="badge">
+            <i class="fa fa-2x fa-home"></i>
+            <span class="badge__status badge__number">2</span>
+          </div>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;div class="badge"&gt;
+      &lt;i class="fa fa-2x fa-shopping-cart"&gt;&lt;/i&gt;
+      &lt;span class="badge__status badge__number"&gt;4&lt;/span&gt;
+    &lt;/div&gt;
+
+    &lt;div class="badge"&gt;
+      &lt;i class="fa fa-2x fa-envelope"&gt;&lt;/i&gt;
+      &lt;span class="badge__status badge__number"&gt;9+&lt;/span&gt;
+    &lt;/div&gt;
+
+    &lt;div class="badge"&gt;
+      &lt;i class="fa fa-2x fa-comment"&gt;&lt;/i&gt;
+      &lt;span class="badge__status badge__number"&gt;99&lt;/span&gt;
+    &lt;/div&gt;
+
+    &lt;div class="badge"&gt;
+      &lt;i class="fa fa-2x fa-heart"&gt;&lt;/i&gt;
+      &lt;span class="badge__status badge__number"&gt;1&lt;/span&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="badge"&gt;
+      &lt;i class="fa fa-2x fa-home"&gt;&lt;/i&gt;
+      &lt;span class="badge__status badge__number"&gt;2&lt;/span&gt;
+    &lt;/div&gt;
+        </code></pre>
+      </main>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

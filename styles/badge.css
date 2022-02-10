@@ -1,0 +1,57 @@
+@import "./main.css";
+@import "./avatar.css";
+
+.badge {
+  position: relative;
+  height: fit-content;
+}
+.badge__status {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid var(--complimentary-text-color);
+}
+/* --- Sizes for status badge --- */
+.badge__status--xs {
+  width: 0.875rem;
+  height: 0.875rem;
+  bottom: 0.1rem;
+  right: 0;
+}
+.badge__status--sm {
+  width: 1rem;
+  height: 1rem;
+  bottom: 0.1rem;
+  right: 0.1rem;
+}
+.badge__status--md {
+  width: 1.25rem;
+  height: 1.25rem;
+  bottom: 0.3rem;
+  right: 0.2rem;
+}
+.badge__status--lg {
+  width: 1.7rem;
+  height: 1.7rem;
+  bottom: 0.4rem;
+  right: 0.4rem;
+}
+/* --- Color for status badge --- */
+.badge__status--online {
+  background-color: var(--success-color);
+}
+.badge__status--offline {
+  background-color: var(--light-secondary-color);
+}
+/* --- Number Badge --- */
+.badge__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--complimentary-text-color);
+  width: 1.4rem;
+  height: 1.4rem;
+  top: -0.2rem;
+  right: -0.6rem;
+  font-size: 0.875rem;
+}
