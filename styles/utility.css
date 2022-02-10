@@ -4,11 +4,20 @@
 .flex-col {
   flex-direction: column;
 }
+.flex-row-reverse{
+  flex-direction: row-reverse;
+}
 .center-cross-axis {
   align-items: center;
 }
 .center-main-axis {
   justify-content: center;
+}
+.center-main-baseline {
+  justify-content: baseline;
+}
+.center-cross-baseline {
+  align-items: baseline;
 }
 .highlight {
   color: var(--primary-color);

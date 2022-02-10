@@ -1,0 +1,54 @@
+@import "./main.css";
+
+.avatar {
+  border-radius: 50%;
+  border: 2px solid var(--complimentary-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Image Avatar --- */
+.avatar__img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+/* --- Avatar Sizes --- */
+.avatar--lg {
+  width: 8rem;
+  height: 8rem;
+  font-size: 2.5rem;
+}
+.avatar--md {
+  width: 6rem;
+  height: 6rem;
+  font-size: 2rem;
+}
+.avatar--sm {
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.5rem;
+}
+.avatar--xs {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+}
+/* --- Avatar Colors --- */
+.avatar--primary {
+  background-color: var(--primary-color);
+  color: var(--complimentary-text-color);
+}
+.avatar--secondary {
+  background-color: var(--secondary-color);
+  color: var(--complimentary-text-color);
+}
+.avatar--success {
+  background-color: var(--success-color);
+  color: var(--complimentary-text-color);
+}
+.avatar--danger {
+  background-color: var(--danger-color);
+  color: var(--complimentary-text-color);
+}

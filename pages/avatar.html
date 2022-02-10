@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pranjal Srivastava" />
+    <link rel="stylesheet" href="../styles/avatar.css" />
+    <title>Avatar | Documentation</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <div class="header__brand flex">
+        <em>
+          <h3>
+            <a href="../index.html">SAPPHIRE UI</a>
+          </h3>
+        </em>
+        <nav class="header__nav flex">
+          <a href="../index.html">Home</a>
+          <a href="./docs.html" class="active">Documentation</a>
+        </nav>
+      </div>
+      <nav class="header__nav flex">
+        <a target="_blank" href="https://twitter.com/srvpranjal">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/pranjal-srivastava-5245381a9/"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://github.com/srv-pranjal">
+          <i class="fa fa-github"></i>
+        </a>
+      </nav>
+    </header>
+    <div class="flex">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <h2>Components</h2>
+          <hr />
+        </div>
+        <div class="sidebar__list flex flex-col">
+          <a class="sidebar__list-item" href="./alert.html" role="button"
+            >Alert</a
+          >
+          <a
+            class="sidebar__list-item sidebar__list-item--active"
+            href="./avatar.html"
+            role="button"
+            >Avatar</a
+          >
+          <a class="sidebar__list-item" href="./badge.html" role="button"
+            >Badges</a
+          >
+          <a class="sidebar__list-item" href="./button.html" role="button"
+            >Buttons</a
+          >
+          <a class="sidebar__list-item" href="" role="button">Cards</a>
+          <a class="sidebar__list-item" href="" role="button">Image</a>
+          <a class="sidebar__list-item" href="" role="button">Input</a>
+        </div>
+      </aside>
+      <main class="component">
+        <h1 class="component__heading">Avatar</h1>
+        <p class="component__description">
+          Avatars are components, that are typically used to display a user
+          profile as a picture, an icon, or short text.
+        </p>
+        <h2 class="component__sub-heading">Image Avatar</h2>
+        <p class="component__sub-description">
+          Avatars can be used directly by including the class -
+          <span class="highlight">avatar</span> along with the class name for
+          the size of avatar needed. There are 4 sizes available for avatar -
+          <span class="highlight"
+            >avatar--xs, avatar--sm, avatar--md, avatar--lg</span
+          >.<br />
+          Avatars can also have image with class name -
+          <span class="highlight">avatar__img</span> as shown below in the code
+          snippet
+        </p>
+        <section class="component__display center-cross-baseline">
+          <div class="avatar avatar--xs">
+            <img
+              class="avatar__img"
+              src="https://i.pravatar.cc/300?img=8"
+              alt="Avatar X-Small"
+            />
+          </div>
+          <div class="avatar avatar--sm">
+            <img
+              class="avatar__img"
+              src="https://i.pravatar.cc/300?img=4"
+              alt="Avatar Small"
+            />
+          </div>
+          <div class="avatar avatar--md">
+            <img
+              class="avatar__img"
+              src="https://i.pravatar.cc/300?img=1"
+              alt="Avatar Medium"
+            />
+          </div>
+          <div class="avatar avatar--lg">
+            <img
+              class="avatar__img"
+              src="https://i.pravatar.cc/300?img=2"
+              alt="Avatar Large"
+            />
+          </div>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+      &lt;div class="avatar avatar--xs"&gt;
+        &lt;img class="avatar__img"
+          src="https://i.pravatar.cc/300?img=8"
+          alt="Avatar X-Small" /&gt;
+      &lt;/div&gt;
+
+      &lt;div class="avatar avatar--sm"&gt;
+        &lt;img class="avatar__img"
+          src="https://i.pravatar.cc/300?img=4"
+          alt="Avatar Small" /&gt;
+      &lt;/div&gt;
+
+      &lt;div class="avatar avatar--md"&gt;
+        &lt;img class="avatar__img"
+          src="https://i.pravatar.cc/300?img=1"
+          alt="Avatar Medium" /&gt;
+      &lt;/div&gt;
+
+      &lt;div class="avatar avatar--lg"&gt;
+        &lt;img class="avatar__img"
+          src="https://i.pravatar.cc/300?img=2"
+          alt="Avatar Large" /&gt;
+      &lt;/div&gt;
+        </code></pre>
+        <h2 class="component__sub-heading">Icon Avatar</h2>
+        <p class="component__sub-description">
+          Using icons as avatar content is very easy. Just embed the icons in
+          <em>i</em> tag and use it in an avatar with the classes mentioned
+          above. Along with the size, you can also select the color of your
+          avatar by using the classes -
+          <span class="highlight"
+            >avatar--primary, avatar--secondary, avatar--success and
+            avatar--danger</span
+          >. <br />
+          Check out the below examples for using icons as avatar content.
+        </p>
+        <section class="component__display center-cross-baseline">
+          <div class="avatar avatar--xs avatar--primary">
+            <i class="fa fa-user-o"></i>
+          </div>
+          <div class="avatar avatar--sm avatar--secondary">
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="avatar avatar--md avatar--success">
+            <i class="fa fa-user-circle"></i>
+          </div>
+          <div class="avatar avatar--lg avatar--danger">
+            <i class="fa fa-users"></i>
+          </div>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;div class="avatar avatar--xs avatar--primary"&gt;
+      &lt;i class="fa fa-user-o">&lt;/i&gt;
+    &lt;/div&gt;
+
+    &lt;div class="avatar avatar--sm avatar--secondary"&gt;
+      &lt;i class="fa fa-user">&lt;/i&gt;
+    &lt;/div&gt;
+
+    &lt;div class="avatar avatar--md avatar--success"&gt;
+      &lt;i class="fa fa-user-circle">&lt;/i&gt;
+    &lt;/div&gt;
+
+    &lt;div class="avatar avatar--lg avatar--danger"&gt;
+      &lt;i class="fa fa-users">&lt;/i&gt;
+    &lt;/div&gt;
+        </code></pre>
+        <h2 class="component__sub-heading">Text Avatar</h2>
+        <p class="component__sub-description">
+          For users who don't use their profile pictures, the initials of their
+          name can be used as avatar content. A text avatar can be created by
+          simply adding the text in the avatar. Here also you have a choice to
+          choose the size and color of avatar by using the classes mentioned
+          above. For eg. -
+          <span class="highlight">avatar avatar-sm avatar--secondary</span>
+          classes will be used to create a small sized avatar of secondary
+          color.
+        </p>
+        <section class="component__display center-cross-baseline">
+          <div class="avatar avatar--xs avatar--primary">PS</div>
+          <div class="avatar avatar--sm avatar--secondary">PS</div>
+          <div class="avatar avatar--md avatar--success">PS</div>
+          <div class="avatar avatar--lg avatar--danger">PS</div>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;div class="avatar avatar--xs avatar--primary"&gt;PS&lt;/div&gt;
+
+    &lt;div class="avatar avatar--sm avatar--secondary"&gt;PS&lt;/div&gt;
+
+    &lt;div class="avatar avatar--md avatar--success"&gt;PS&lt;/div&gt;
+
+    &lt;div class="avatar avatar--lg avatar--danger"&gt;PS&lt;/div&gt;
+        </code></pre>
+      </main>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
