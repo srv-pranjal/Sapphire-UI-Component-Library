@@ -1,0 +1,10 @@
+@import "./main.css";
+
+.img-responsive {
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-round{
+    border-radius: 50%;
+}

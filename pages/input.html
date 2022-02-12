@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pranjal Srivastava" />
+    <link rel="stylesheet" href="../styles/input.css" />
+    <title>Input | Documentation</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <div class="header__brand flex">
+        <em>
+          <h3>
+            <a href="../index.html">SAPPHIRE UI</a>
+          </h3>
+        </em>
+        <nav class="header__nav flex">
+          <a href="../index.html">Home</a>
+          <a href="./docs.html" class="active">Documentation</a>
+        </nav>
+      </div>
+      <nav class="header__nav flex">
+        <a target="_blank" href="https://twitter.com/srvpranjal">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/pranjal-srivastava-5245381a9/"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://github.com/srv-pranjal">
+          <i class="fa fa-github"></i>
+        </a>
+      </nav>
+    </header>
+    <div class="flex">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <h2>Components</h2>
+          <hr />
+        </div>
+        <div class="sidebar__list flex flex-col">
+          <a class="sidebar__list-item" href="./alert.html" role="button"
+            >Alert</a
+          >
+          <a class="sidebar__list-item" href="./avatar.html" role="button"
+            >Avatar</a
+          >
+          <a class="sidebar__list-item" href="./badge.html" role="button"
+            >Badges</a
+          >
+          <a class="sidebar__list-item" href="./button.html" role="button"
+            >Buttons</a
+          >
+          <a class="sidebar__list-item" href="./card.html" role="button"
+            >Cards</a
+          >
+          <a
+            class="sidebar__list-item"
+            href="./image.html"
+            role="button"
+            >Image</a
+          >
+          <a class="sidebar__list-item sidebar__list-item--active" href="./input.html" role="button"
+            >Input</a
+          >
+          <a class="sidebar__list-item" href="./list.html" role="button"
+            >List</a
+          >
+          <a class="sidebar__list-item" href="./modal.html" role="button"
+            >Modal</a
+          >
+          <a class="sidebar__list-item" href="./navigation.html" role="button"
+            >Navigation</a
+          >
+        </div>
+      </aside>
+      <main class="component">
+        <h1 class="component__heading">Input</h1>
+        <p class="component__description">
+          Inputs are used to create interactive controls for web-based forms in
+          order to accept data from the user.
+        </p>
+        <h2 class="component__sub-heading">Text Input</h2>
+        <p class="component__sub-description">
+          Two types of text inputs are available which includes - Standard and
+          Outlined text fields. These input fields can be built directly by
+          including the class name - <span class="highlight">input</span> along
+          with the class name for the type of input fields -
+          <span class="highlight">input--standard input--outlined</span><br />
+          Check out below examples for text fields.
+        </p>
+        <section class="component__display center-cross-axis">
+          <input
+            type="text"
+            class="input input--standard"
+            placeholder="Standard"
+          />
+          <input
+            type="text"
+            class="input input--outlined"
+            placeholder="Outlined"
+          />
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;input type="text" class="input input--standard"
+      placeholder="Standard"
+    /&gt;
+
+    &lt;input type="text" class="input input--outlined"
+      placeholder="Outlined"
+    /&gt;
+        </code></pre>
+        <h2 class="component__sub-heading">Validation Input</h2>
+        <p class="component__sub-description">
+          For both Standard and Outlined input, 3 validation inputs are
+          available which includes -
+          <span class="highlight">Success, Warning and Error</span>. Success
+          Inputs can be used in case the password matches with the confirm
+          password, Warning Inputs can be used in case the entered password is
+          not strong enough and Error Inputs can be used if the entered
+          username/password is incorrect or entered password doesn't match with
+          the confirm password. <br />
+          To start using validation inputs for standard input, include the class
+          names -
+          <span class="highlight"
+            >input--standard-success, input--standard-warning,
+            input--standard-error</span
+          >
+          and for outlined input, include the class names -
+          <span class="highlight"
+            >input--outlined-success, input--outlined-warning,
+            input--outlined-error</span
+          >
+          along with the class names mentioned above.
+        </p>
+        <section class="component__display center-cross-axis">
+          <input
+            type="password"
+            class="input input--outlined input--outlined-warning"
+            placeholder="Weak password"
+          />
+          <input
+            type="password"
+            class="input input--outlined input--outlined-error"
+            placeholder="Invalid Password"
+          />
+          <input
+            type="password"
+            class="input input--outlined input--outlined-success"
+            placeholder="Password matches"
+          />
+          <input
+            type="password"
+            class="input input--standard input--standard-warning"
+            placeholder="Weak password"
+          />
+          <input
+            type="password"
+            class="input input--standard input--standard-error"
+            placeholder="Invalid Password"
+          />
+          <input
+            type="password"
+            class="input input--standard input--standard-success"
+            placeholder="Password matches"
+          />
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;input class="input input--outlined input--outlined-warning"
+      type="password"
+      placeholder="Weak password"
+    /&gt;
+
+    &lt;input class="input input--outlined input--outlined-error"
+      type="password"
+      placeholder="Invalid Password"
+    /&gt;
+    
+    &lt;input class="input input--outlined input--outlined-success"
+      type="password"
+      placeholder="Password matches"
+    /&gt;
+
+
+    &lt;input class="input input--standard input--standard-warning"
+      type="password"
+      placeholder="Weak password"
+    /&gt;
+
+    &lt;input class="input input--standard input--standard-error"
+      type="password"
+      placeholder="Invalid Password"
+    /&gt;
+
+    &lt;input class="input input--standard input--standard-success"
+      type="password"
+      placeholder="Password matches"
+    /&gt;
+        </code></pre>
+      </main>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

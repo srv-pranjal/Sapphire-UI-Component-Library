@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pranjal Srivastava" />
+    <link rel="stylesheet" href="../styles/image.css" />
+    <title>Image | Documentation</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <div class="header__brand flex">
+        <em>
+          <h3>
+            <a href="../index.html">SAPPHIRE UI</a>
+          </h3>
+        </em>
+        <nav class="header__nav flex">
+          <a href="../index.html">Home</a>
+          <a href="./docs.html" class="active">Documentation</a>
+        </nav>
+      </div>
+      <nav class="header__nav flex">
+        <a target="_blank" href="https://twitter.com/srvpranjal">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/pranjal-srivastava-5245381a9/"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://github.com/srv-pranjal">
+          <i class="fa fa-github"></i>
+        </a>
+      </nav>
+    </header>
+    <div class="flex">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <h2>Components</h2>
+          <hr />
+        </div>
+        <div class="sidebar__list flex flex-col">
+          <a class="sidebar__list-item" href="./alert.html" role="button"
+            >Alert</a
+          >
+          <a class="sidebar__list-item" href="./avatar.html" role="button"
+            >Avatar</a
+          >
+          <a class="sidebar__list-item" href="./badge.html" role="button"
+            >Badges</a
+          >
+          <a class="sidebar__list-item" href="./button.html" role="button"
+            >Buttons</a
+          >
+          <a class="sidebar__list-item" href="./card.html" role="button"
+            >Cards</a
+          >
+          <a
+            class="sidebar__list-item sidebar__list-item--active"
+            href="./image.html"
+            role="button"
+            >Image</a
+          >
+          <a class="sidebar__list-item" href="./input.html" role="button"
+            >Input</a
+          >
+          <a class="sidebar__list-item" href="./list.html" role="button"
+            >List</a
+          >
+          <a class="sidebar__list-item" href="./modal.html" role="button"
+            >Modal</a
+          >
+          <a class="sidebar__list-item" href="./navigation.html" role="button"
+            >Navigation</a
+          >
+        </div>
+      </aside>
+      <main class="component">
+        <h1 class="component__heading">Image</h1>
+        <p class="component__description">
+          Images can be responsive to fit the parent's width, and also can be
+          customised to be round shaped
+        </p>
+        <h2 class="component__sub-heading">Responsive Image</h2>
+        <p class="component__sub-description">
+          An image can be made responsive by including the class name -
+          <span class="highlight">img-responsive</span> to the image. <br />
+          Check out the below example for responsive image.
+        </p>
+        <section class="component__display center-cross-axis">
+          <img
+            class="img-responsive"
+            src="../assets/component-library-illustration.svg"
+            alt="Responsive Image"
+          />
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;img
+      class="img-responsive"
+      src="../assets/component-library-illustration.svg"
+      alt="Responsive Image"
+    /&gt;
+        </code></pre>
+        <h2 class="component__sub-heading">Rounded Image</h2>
+        <p class="component__sub-description">
+          A rounded image can be built by using the class name -
+          <span class="highlight">img-round</span> in the <em>img</em> tag.
+          <br />
+          Check out the below example for rounded image
+        </p>
+        <section class="component__display center-cross-axis">
+          <img
+            class="img-round"
+            src="https://i.pravatar.cc/300?img=11"
+            alt="Responsive Image"
+          />
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;img
+      class="img-round"
+      src="https://i.pravatar.cc/300?img=2"
+      alt="Responsive Image"
+    /&gt;
+        </code></pre>
+      </main>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
