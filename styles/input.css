@@ -1,0 +1,60 @@
+@import "./main.css";
+
+.input {
+  padding: 0.5rem;
+  outline: none;
+}
+/* --- Outlined Inputs --- */
+.input--outlined {
+  border-radius: 5px;
+  border: 0.1rem solid var(--light-secondary-color);
+}
+.input--outlined:focus {
+  border: 0.1rem solid var(--primary-color);
+}
+/* Validation Outliined Inputs  */
+.input--outlined-success {
+  border: 0.1rem solid var(--light-success-color);
+}
+.input--outlined-warning {
+  border: 0.1rem solid var(--light-warning-color);
+}
+.input--outlined-error {
+  border: 0.1rem solid var(--light-danger-color);
+}
+.input--outlined-success:focus {
+  border: 0.15rem solid var(--light-success-color);
+}
+.input--outlined-warning:focus {
+  border: 0.15rem solid var(--light-warning-color);
+}
+.input--outlined-error:focus {
+  border: 0.15rem solid var(--light-danger-color);
+}
+/* --- Standard Inputs --- */
+.input--standard {
+  border: 0;
+  border-bottom: 0.1rem solid var(--light-secondary-color);
+}
+.input--standard:focus {
+  border-bottom: 0.1rem solid var(--primary-color);
+}
+/* Validation Standard Inputs  */
+.input--standard-success {
+  border-bottom: 0.1rem solid var(--light-success-color);
+}
+.input--standard-warning {
+  border-bottom: 0.1rem solid var(--light-warning-color);
+}
+.input--standard-error {
+  border-bottom: 0.1rem solid var(--light-danger-color);
+}
+.input--standard-success:focus {
+  border-bottom: 0.15rem solid var(--light-success-color);
+}
+.input--standard-warning:focus {
+  border-bottom: 0.15rem solid var(--light-warning-color);
+}
+.input--standard-error:focus {
+  border-bottom: 0.15rem solid var(--light-danger-color);
+}
