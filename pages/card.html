@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pranjal Srivastava" />
+    <link rel="stylesheet" href="../styles/card.css" />
+    <title>Card | Documentation</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <div class="header__brand flex">
+        <em>
+          <h3>
+            <a href="../index.html">SAPPHIRE UI</a>
+          </h3>
+        </em>
+        <nav class="header__nav flex">
+          <a href="../index.html">Home</a>
+          <a href="./docs.html" class="active">Documentation</a>
+        </nav>
+      </div>
+      <nav class="header__nav flex">
+        <a target="_blank" href="https://twitter.com/srvpranjal">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/pranjal-srivastava-5245381a9/"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://github.com/srv-pranjal">
+          <i class="fa fa-github"></i>
+        </a>
+      </nav>
+    </header>
+    <div class="flex">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <h2>Components</h2>
+          <hr />
+        </div>
+        <div class="sidebar__list flex flex-col">
+          <a class="sidebar__list-item" href="./alert.html" role="button"
+            >Alert</a
+          >
+          <a class="sidebar__list-item" href="./avatar.html" role="button"
+            >Avatar</a
+          >
+          <a class="sidebar__list-item" href="./badge.html" role="button"
+            >Badges</a
+          >
+          <a class="sidebar__list-item" href="./button.html" role="button"
+            >Buttons</a
+          >
+          <a
+            class="sidebar__list-item sidebar__list-item--active"
+            href="./card.html"
+            role="button"
+            >Cards</a
+          >
+          <a class="sidebar__list-item" href="./image.html" role="button"
+            >Image</a
+          >
+          <a class="sidebar__list-item" href="./input.html" role="button"
+            >Input</a
+          >
+          <a class="sidebar__list-item" href="./list.html" role="button"
+            >List</a
+          >
+          <a class="sidebar__list-item" href="./modal.html" role="button"
+            >Modal</a
+          >
+          <a class="sidebar__list-item" href="./navigation.html" role="button"
+            >Navigation</a
+          >
+        </div>
+      </aside>
+      <main class="component">
+        <h1 class="component__heading">Cards</h1>
+        <p class="component__description">
+          Cards are containers which can be used to display few short, related
+          pieces of information.
+        </p>
+        <h2 class="component__sub-heading">Vertical Card</h2>
+        <p class="component__sub-description">
+          Cards can be used to display products on an e-commerce website. A
+          vertical card can be built by including the class name -
+          <span class="highlight">card--vertical</span> along with the default
+          class <span class="highlight">card</span>. <br />
+          Copy below code and put your desired text and image and you are good
+          to go.
+        </p>
+        <section class="component__display center-main-axis">
+          <article class="card card--vertical">
+            <div class="card__content">
+              <div class="card__img-container">
+                <img src="../assets/t-shirt.jpg" class="img-responsive" />
+              </div>
+              <div class="card__product-details">
+                <div class="card__title">
+                  <h2>White T-shirt</h2>
+                  <small>by Sapphire Designs </small>
+                </div>
+                <div class="card__description">
+                  White solid T-shirt, has a round neck and short sleeves.
+                  <div class="card__price-wrapper">
+                    <span class="card__price-original">₹399</span>
+                    <span class="card__price-discounted">₹299</span>
+                    <span class="card__discount highlight">25% OFF</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__footer">
+              <button class="btn btn--outline-secondary">
+                <i class="fa fa-heart-o"></i>
+              </button>
+              <button class="btn btn--outline-secondary">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+              <button class="btn btn--primary">Buy Now</button>
+            </div>
+          </article>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;article class="card card--vertical"&gt;
+      &lt;div class="card__content"&gt;
+        &lt;div class="card__img-container"&gt;
+          &lt;img src="../assets/t-shirt.jpg" class="img-responsive" /&gt;
+        &lt;/div&gt;
+        &lt;div class="card__product-details"&gt;
+          &lt;div class="card__title"&gt;
+            &lt;h2&gt;White T-shirt&lt;/h2&gt;
+            &lt;small&gt;by Sapphire Designs &lt;/small&gt;
+          &lt;/div&gt;
+          &lt;div class="card__description"&gt;
+            White solid T-shirt, has a round neck and short sleeves.
+            &lt;div class="card__price-wrapper"&gt;
+              &lt;span class="card__price-original"&gt;₹399&lt;/span&gt;
+              &lt;span class="card__price-discounted"&gt;₹299&lt;/span&gt;
+              &lt;span class="card__discount highlight"&gt;25% OFF&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="card__footer"&gt;
+        &lt;button class="btn btn--outline-secondary"&gt;
+          &lt;i class="fa fa-heart-o"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button class="btn btn--outline-secondary"&gt;
+          &lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button class="btn btn--primary"&gt;Buy Now&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/article&gt;
+        </code></pre>
+        <h2 class="component__sub-heading">Card with Badge</h2>
+        <p class="component__sub-description">
+          On an e-commerce website, often badges are used to display information
+          like <span class="highlight">New Arrivals, Best Seller</span>. This
+          can be done by including a <em>span</em> tag with a class name -
+          <span class="highlight">card__badge</span>. <br />
+          Check out the below example for including a badge in a card.
+        </p>
+        <section class="component__display center-main-axis">
+          <article class="card card--vertical">
+            <div class="card__content">
+              <div class="card__img-container">
+                <img src="../assets/t-shirt.jpg" class="img-responsive" />
+              </div>
+              <div class="card__product-details">
+                <div class="card__title">
+                  <h2>White T-shirt</h2>
+                  <small>by Sapphire Designs </small>
+                </div>
+                <div class="card__description">
+                  White solid T-shirt, has a round neck and short sleeves.
+                  <div class="card__price-wrapper">
+                    <span class="card__price-original">₹399</span>
+                    <span class="card__price-discounted">₹299</span>
+                    <span class="card__discount highlight">25% OFF</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__footer">
+              <button class="btn btn--outline-secondary">
+                <i class="fa fa-heart-o"></i>
+              </button>
+              <button class="btn btn--outline-secondary">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+              <button class="btn btn--primary">Buy Now</button>
+            </div>
+            <span class="card__badge">New Arrival</span>
+          </article>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;article class="card card--vertical"&gt;
+      &lt;div class="card__content"&gt;
+        &lt;div class="card__img-container"&gt;
+          &lt;img src="../assets/t-shirt.jpg" class="img-responsive" /&gt;
+        &lt;/div&gt;
+        &lt;div class="card__product-details"&gt;
+          &lt;div class="card__title"&gt;
+            &lt;h2&gt;White T-shirt&lt;/h2&gt;
+            &lt;small&gt;by Sapphire Designs &lt;/small&gt;
+          &lt;/div&gt;
+          &lt;div class="card__description"&gt;
+            White solid T-shirt, has a round neck and short sleeves.
+            &lt;div class="card__price-wrapper"&gt;
+              &lt;span class="card__price-original"&gt;₹399&lt;/span&gt;
+              &lt;span class="card__price-discounted"&gt;₹299&lt;/span&gt;
+              &lt;span class="card__discount highlight"&gt;25% OFF&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="card__footer"&gt;
+        &lt;button class="btn btn--outline-secondary"&gt;
+          &lt;i class="fa fa-heart-o"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button class="btn btn--outline-secondary"&gt;
+          &lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button class="btn btn--primary"&gt;Buy Now&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;span class="card__badge"&gt;New Arrival&lt;/span&gt;
+    &lt;/article&gt;
+        </code></pre>
+        <h2 class="component__sub-heading">Card with Dismiss</h2>
+        <p class="component__sub-description">
+          Cards can also have a close button with the class name
+          <span class="highlight">card__btn-close</span> as shown in the code
+          snippet below.
+        </p>
+        <section class="component__display center-main-axis">
+          <article class="card card--vertical">
+            <div class="card__content">
+              <div class="card__img-container">
+                <img src="../assets/t-shirt.jpg" class="img-responsive" />
+              </div>
+              <div class="card__product-details">
+                <div class="card__title">
+                  <h2>White T-shirt</h2>
+                  <small>by Sapphire Designs </small>
+                </div>
+                <div class="card__description">
+                  White solid T-shirt, has a round neck and short sleeves.
+                  <div class="card__price-wrapper">
+                    <span class="card__price-original">₹399</span>
+                    <span class="card__price-discounted">₹299</span>
+                    <span class="card__discount highlight">25% OFF</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__footer">
+              <button class="btn btn--outline-secondary">
+                <i class="fa fa-heart-o"></i>
+              </button>
+              <button class="btn btn--outline-secondary">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+              <button class="btn btn--primary">Buy Now</button>
+            </div>
+            <a class="card__btn-close"><i class="fa fa-times-circle"></i></a>
+          </article>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;article class="card card--vertical"&gt;
+      &lt;div class="card__content"&gt;
+        &lt;div class="card__img-container"&gt;
+          &lt;img src="../assets/t-shirt.jpg" class="img-responsive" /&gt;
+        &lt;/div&gt;
+        &lt;div class="card__product-details"&gt;
+          &lt;div class="card__title"&gt;
+            &lt;h2&gt;White T-shirt&lt;/h2&gt;
+            &lt;small&gt;by Sapphire Designs &lt;/small&gt;
+          &lt;/div&gt;
+          &lt;div class="card__description"&gt;
+            White solid T-shirt, has a round neck and short sleeves.
+            &lt;div class="card__price-wrapper"&gt;
+              &lt;span class="card__price-original"&gt;₹399&lt;/span&gt;
+              &lt;span class="card__price-discounted"&gt;₹299&lt;/span&gt;
+              &lt;span class="card__discount highlight"&gt;25% OFF&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="card__footer"&gt;
+        &lt;button class="btn btn--outline-secondary"&gt;
+          &lt;i class="fa fa-heart-o"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button class="btn btn--outline-secondary"&gt;
+          &lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button class="btn btn--primary"&gt;Buy Now&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;a class="card__btn-close"&gt;&lt;i class="fa fa-times-circle"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/article&gt;
+        </code></pre>
+        <h2 class="component__sub-heading">Card with Text Overlay</h2>
+        <p class="component__sub-description">
+          Information like <span class="highlight">Out of Stock</span> can be
+          displayed as a text overlay on cards. <br />
+          Copy the below code snippet to create a card with text overlay.
+        </p>
+        <section class="component__display center-main-axis">
+          <article class="card card--vertical">
+            <div class="card__overlay">
+              <p>Out Of Stock</p>
+            </div>
+            <div class="card__content">
+              <div class="card__img-container">
+                <img src="../assets/t-shirt.jpg" class="img-responsive" />
+              </div>
+              <div class="card__product-details">
+                <div class="card__title">
+                  <h2>White T-shirt</h2>
+                  <small>by Sapphire Designs </small>
+                </div>
+                <div class="card__description">
+                  White solid T-shirt, has a round neck and short sleeves.
+                  <div class="card__price-wrapper">
+                    <span class="card__price-original">₹399</span>
+                    <span class="card__price-discounted">₹299</span>
+                    <span class="card__discount highlight">25% OFF</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__footer">
+              <button class="btn btn--outline-secondary">
+                <i class="fa fa-heart-o"></i>
+              </button>
+              <button class="btn btn--outline-secondary">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+              <button class="btn btn--primary">Buy Now</button>
+            </div>
+            <a class="card__btn-close"><i class="fa fa-times-circle"></i></a>
+          </article>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;article class="card card--vertical"&gt;
+      &lt;div class="card__overlay"&gt;
+        &lt;p&gt;Out Of Stock&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="card__content"&gt;
+        &lt;div class="card__img-container"&gt;
+          &lt;img src="../assets/t-shirt.jpg" class="img-responsive" /&gt;
+        &lt;/div&gt;
+        &lt;div class="card__product-details"&gt;
+          &lt;div class="card__title"&gt;
+            &lt;h2&gt;White T-shirt&lt;/h2&gt;
+            &lt;small&gt;by Sapphire Designs &lt;/small&gt;
+          &lt;/div&gt;
+          &lt;div class="card__description"&gt;
+            White solid T-shirt, has a round neck and short sleeves.
+            &lt;div class="card__price-wrapper"&gt;
+              &lt;span class="card__price-original"&gt;₹399&lt;/span&gt;
+              &lt;span class="card__price-discounted"&gt;₹299&lt;/span&gt;
+              &lt;span class="card__discount highlight"&gt;25% OFF&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="card__footer"&gt;
+        &lt;button class="btn btn--outline-secondary"&gt;
+          &lt;i class="fa fa-heart-o"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button class="btn btn--outline-secondary"&gt;
+          &lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button class="btn btn--primary"&gt;Buy Now&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;a class="card__btn-close"&gt;&lt;i class="fa fa-times-circle"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/article&gt;
+        </code></pre>
+        <h2 class="component__sub-heading">Text only Card</h2>
+        <p class="component__sub-description">
+          A card without image can also be created by removing the image
+          container from the existing card.
+        </p>
+        <section class="component__display center-main-axis">
+          <article class="card card--vertical">
+            <div class="card__content">
+              <div class="card__product-details">
+                <div class="card__title">
+                  <h2>White T-shirt</h2>
+                  <small>by Sapphire Designs </small>
+                </div>
+                <div class="card__description">
+                  White solid T-shirt, has a round neck and short sleeves.
+                  <div class="card__price-wrapper">
+                    <span class="card__price-original">₹399</span>
+                    <span class="card__price-discounted">₹299</span>
+                    <span class="card__discount highlight">25% OFF</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__footer">
+              <button class="btn btn--outline-secondary">
+                <i class="fa fa-heart-o"></i>
+              </button>
+              <button class="btn btn--outline-secondary">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+              <button class="btn btn--primary">Buy Now</button>
+            </div>
+          </article>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;article class="card card--vertical"&gt;
+      &lt;div class="card__content"&gt;
+        &lt;div class="card__product-details"&gt;
+          &lt;div class="card__title"&gt;
+            &lt;h2&gt;White T-shirt&lt;/h2&gt;
+            &lt;small&gt;by Sapphire Designs &lt;/small&gt;
+          &lt;/div&gt;
+          &lt;div class="card__description"&gt;
+            White solid T-shirt, has a round neck and short sleeves.
+            &lt;div class="card__price-wrapper"&gt;
+              &lt;span class="card__price-original"&gt;₹399&lt;/span&gt;
+              &lt;span class="card__price-discounted"&gt;₹299&lt;/span&gt;
+              &lt;span class="card__discount highlight"&gt;25% OFF&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="card__footer"&gt;
+        &lt;button class="btn btn--outline-secondary"&gt;
+          &lt;i class="fa fa-heart-o"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button class="btn btn--outline-secondary"&gt;
+          &lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button class="btn btn--primary"&gt;Buy Now&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/article&gt;
+        </code></pre>
+        <h2 class="component__sub-heading">Horizontal Card</h2>
+        <p class="component__sub-description">
+          Sometimes we need Horizontal cards instead of vertical ones to display
+          products on the product listing page. This can be built by including
+          the class name - <span class="highlight">card--horizontal</span> in
+          place of card--vertical.
+        </p>
+        <section class="component__display center-main-axis">
+          <article class="card card--horizontal">
+            <div class="card__content">
+              <div class="card__img-container">
+                <img src="../assets/t-shirt.jpg" class="img-responsive" />
+              </div>
+              <div class="card__product-details">
+                <div class="card__title">
+                  <h2>White T-shirt</h2>
+                  <small>by Sapphire Designs </small>
+                </div>
+                <div class="card__description">
+                  White solid T-shirt, has a round neck and short sleeves.
+                  <div class="card__price-wrapper">
+                    <span class="card__price-original">₹399</span>
+                    <span class="card__price-discounted">₹299</span>
+                    <span class="card__discount highlight">25% OFF</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__footer">
+              <button class="btn btn--outline-secondary">
+                <i class="fa fa-heart-o"></i>
+              </button>
+              <button class="btn btn--outline-secondary">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+              <button class="btn btn--primary">Buy Now</button>
+            </div>
+          </article>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;article class="card card--horizontal"&gt;
+      &lt;div class="card__content"&gt;
+        &lt;div class="card__img-container"&gt;
+          &lt;img src="../assets/t-shirt.jpg" class="img-responsive" /&gt;
+        &lt;/div&gt;
+        &lt;div class="card__product-details"&gt;
+          &lt;div class="card__title"&gt;
+            &lt;h2&gt;White T-shirt&lt;/h2&gt;
+            &lt;small&gt;by Sapphire Designs &lt;/small&gt;
+          &lt;/div&gt;
+          &lt;div class="card__description"&gt;
+            White solid T-shirt, has a round neck and short sleeves.
+            &lt;div class="card__price-wrapper"&gt;
+              &lt;span class="card__price-original"&gt;₹399&lt;/span&gt;
+              &lt;span class="card__price-discounted"&gt;₹299&lt;/span&gt;
+              &lt;span class="card__discount highlight"&gt;25% OFF&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="card__footer"&gt;
+        &lt;button class="btn btn--outline-secondary"&gt;
+          &lt;i class="fa fa-heart-o"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button class="btn btn--outline-secondary"&gt;
+          &lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button class="btn btn--primary"&gt;Buy Now&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/article&gt;
+        </code></pre>
+        <h2 class="component__sub-heading">Card with Shadow</h2>
+        <p class="component__sub-description">
+          A card can also have a background shadow. This can be done by
+          including the class name -
+          <span class="highlight">card--shadow</span> along with the existing
+          classes.
+        </p>
+        <section class="component__display center-main-axis">
+          <article class="card card--vertical card--shadow">
+            <div class="card__content">
+              <div class="card__img-container">
+                <img src="../assets/t-shirt.jpg" class="img-responsive" />
+              </div>
+              <div class="card__product-details">
+                <div class="card__title">
+                  <h2>White T-shirt</h2>
+                  <small>by Sapphire Designs </small>
+                </div>
+                <div class="card__description">
+                  White solid T-shirt, has a round neck and short sleeves.
+                  <div class="card__price-wrapper">
+                    <span class="card__price-original">₹399</span>
+                    <span class="card__price-discounted">₹299</span>
+                    <span class="card__discount highlight">25% OFF</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card__footer">
+              <button class="btn btn--outline-secondary">
+                <i class="fa fa-heart-o"></i>
+              </button>
+              <button class="btn btn--outline-secondary">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+              <button class="btn btn--primary">Buy Now</button>
+            </div>
+          </article>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;article class="card card--vertical card--shadow"&gt;
+      &lt;div class="card__content"&gt;
+        &lt;div class="card__img-container"&gt;
+          &lt;img src="../assets/t-shirt.jpg" class="img-responsive" /&gt;
+        &lt;/div&gt;
+        &lt;div class="card__product-details"&gt;
+          &lt;div class="card__title"&gt;
+            &lt;h2&gt;White T-shirt&lt;/h2&gt;
+            &lt;small&gt;by Sapphire Designs &lt;/small&gt;
+          &lt;/div&gt;
+          &lt;div class="card__description"&gt;
+            White solid T-shirt, has a round neck and short sleeves.
+            &lt;div class="card__price-wrapper"&gt;
+              &lt;span class="card__price-original"&gt;₹399&lt;/span&gt;
+              &lt;span class="card__price-discounted"&gt;₹299&lt;/span&gt;
+              &lt;span class="card__discount highlight"&gt;25% OFF&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="card__footer"&gt;
+        &lt;button class="btn btn--outline-secondary"&gt;
+          &lt;i class="fa fa-heart-o"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button class="btn btn--outline-secondary"&gt;
+          &lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;button class="btn btn--primary"&gt;Buy Now&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/article&gt;
+        </code></pre>
+      </main>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
