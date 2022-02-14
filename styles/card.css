@@ -1,0 +1,105 @@
+@import "./main.css";
+
+.card {
+  border-radius: 5px;
+  outline: 1px solid var(--secondary-color);
+  max-width: 35ch;
+  position: relative;
+}
+.card__title {
+  padding: 1rem;
+}
+.card__content {
+  display: flex;
+}
+.card__img-container {
+  height: 12.5rem;
+}
+.card__img-container > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+}
+.card__description {
+  padding: 0 1rem;
+}
+.card__price-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  align-items: baseline;
+}
+.card__price-original {
+  text-decoration: line-through;
+  font-weight: 100;
+}
+.card__price-discounted {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.card__discount {
+  margin-left: auto;
+}
+.card__footer {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.card__footer > button:last-child {
+  margin-left: auto;
+}
+/* --- Card with Badge --- */
+.card__badge {
+  background-color: var(--primary-color);
+  color: var(--complimentary-text-color);
+  padding: 0 0.5rem;
+  border-radius: 0 1rem 1rem 0;
+  position: absolute;
+  top: 0.5rem;
+}
+.card__btn-close {
+  color: var(--complimentary-text-color);
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 2;
+}
+/* --- Vertical Card --- */
+.card--vertical .card__content {
+  flex-direction: column;
+}
+/* --- Card with Text Overlay --- */
+.card__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--transparent-background-color);
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  z-index: 1;
+}
+.card__overlay > p {
+  font-weight: 900;
+  color: var(--complimentary-text-color);
+  background-color: var(--primary-color);
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+/* --- Horizontal Card ---*/
+.card--horizontal {
+  max-width: 60ch;
+}
+.card--horizontal .card__img-container > img {
+  object-fit: scale-down;
+}
+/* --- Card with Shadow --- */
+.card--shadow {
+  box-shadow: 1px 1px 5px var(--secondary-color);
+  outline: none;
+}
