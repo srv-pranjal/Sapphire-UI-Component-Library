@@ -1,0 +1,60 @@
+@import "./main.css";
+@import "./avatar.css";
+
+.modal-wrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--transparent-background-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  max-width: 50ch;
+  background-color: var(--white-color);
+  border-radius: 0.4rem;
+  outline: 1px solid var(--secondary-color);
+}
+.modal__header {
+  display: flex;
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
+.modal__body {
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 15rem;
+  overflow: auto;
+}
+.modal__footer {
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+.modal__btn-close {
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 1.2rem;
+}
+.modal__item {
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+  align-items: center;
+}
+.modal__item:hover {
+  background-color: var(--light-secondary-color);
+  color: var(--complimentary-text-color);
+  border-radius: 0.4rem;
+}

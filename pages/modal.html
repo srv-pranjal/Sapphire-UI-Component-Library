@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pranjal Srivastava" />
+    <link rel="stylesheet" href="../styles/modal.css" />
+    <title>Modal | Documentation</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <div class="header__brand flex">
+        <em>
+          <h3>
+            <a href="../index.html">SAPPHIRE UI</a>
+          </h3>
+        </em>
+        <nav class="header__nav flex">
+          <a href="../index.html">Home</a>
+          <a href="./docs.html" class="active">Documentation</a>
+        </nav>
+      </div>
+      <nav class="header__nav flex">
+        <a target="_blank" href="https://twitter.com/srvpranjal">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/pranjal-srivastava-5245381a9/"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://github.com/srv-pranjal">
+          <i class="fa fa-github"></i>
+        </a>
+      </nav>
+    </header>
+    <div class="flex">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <h2>Components</h2>
+          <hr />
+        </div>
+        <div class="sidebar__list flex flex-col">
+          <a class="sidebar__list-item" href="./alert.html" role="button"
+            >Alert</a
+          >
+          <a class="sidebar__list-item" href="./avatar.html" role="button"
+            >Avatar</a
+          >
+          <a class="sidebar__list-item" href="./badge.html" role="button"
+            >Badges</a
+          >
+          <a class="sidebar__list-item" href="./button.html" role="button"
+            >Buttons</a
+          >
+          <a class="sidebar__list-item" href="./card.html" role="button"
+            >Cards</a
+          >
+          <a class="sidebar__list-item" href="./image.html" role="button"
+            >Image</a
+          >
+          <a class="sidebar__list-item" href="./input.html" role="button"
+            >Input</a
+          >
+          <a class="sidebar__list-item" href="./list.html" role="button"
+            >List</a
+          >
+          <a
+            class="sidebar__list-item sidebar__list-item--active"
+            href="./modal.html"
+            role="button"
+            >Modal</a
+          >
+          <a class="sidebar__list-item" href="./navigation.html" role="button"
+            >Navigation</a
+          >
+        </div>
+      </aside>
+      <main class="component">
+        <h1 class="component__heading">Modal</h1>
+        <p class="component__description">
+          A modal is a window that appears in front of app content to provide
+          critical information or ask for a decision.
+        </p>
+        <h2 class="component__sub-heading">Simple Modal</h2>
+        <p class="component__sub-description">
+          A simple modal can be used to display short information and ask for
+          user's interaction. This can be done by building a container with
+          class name - <span class="highlight">modal</span> wrapped in a
+          container with class name -
+          <span class="highlight">modal-wrapper</span>. <br />
+          Check out the Live Demo by clicking on the Demo button.
+        </p>
+        <section class="component__display center-main-axis">
+          <button id="btn-simple-modal" class="btn btn--outline-primary">
+            Live Demo
+          </button>
+          <div id="simple-modal" class="modal-wrapper">
+            <div class="modal">
+              <div class="modal__header">
+                <h2>Modal Header</h2>
+                <a id="modal__close" class="modal__btn-close">
+                  <i class="fa fa-times-circle"></i>
+                </a>
+              </div>
+              <hr />
+              <div class="modal__body">
+                By clicking “Accept”, you agree this site can store cookies on
+                your device and disclose information in accordance with our
+                Cookie Policy.
+              </div>
+              <div class="modal__footer">
+                <button class="btn btn--outline-primary">Cancel</button>
+                <button class="btn btn--primary">Accept</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;div class="modal-wrapper"&gt;
+        &lt;div class="modal"&gt;
+            &lt;div class="modal__header"&gt;
+                &lt;h2&gt;Modal Header&lt;/h2&gt;
+                &lt;a class="modal__btn-close"&gt;
+                    &lt;i class="fa fa-times-circle"&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;hr /&gt;
+            &lt;div class="modal__body"&gt;
+              By clicking “Accept”, you agree this site can store cookies on your device and disclose information in accordance with our Cookie Policy.
+            &lt;/div&gt;
+            &lt;div class="modal__footer"&gt;
+                &lt;button class="btn btn--outline-primary"&gt;Cancel&lt;/button&gt;
+                &lt;button class="btn btn--primary"&gt;Accept&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;            
+        </code></pre>
+        <h2 class="component__sub-heading">List Modal</h2>
+        <p class="component__sub-description">
+          A list modal display a list of items that take immediate effect when
+          selected, for e.g. Selecting account after clicking on Login with
+          google option. <br />
+          Copy the below code snippet to get started with a List modal.
+        </p>
+        <section class="component__display center-main-axis">
+          <button id="btn-list-modal" class="btn btn--outline-primary">
+            Live Demo
+          </button>
+          <div id="list-modal" class="modal-wrapper">
+            <div class="modal">
+              <div class="modal__header">
+                <h2>Set backup account</h2>
+              </div>
+              <hr />
+              <div class="modal__body">
+                <div class="modal__item">
+                  <div class="avatar avatar--xs">
+                    <img
+                      class="avatar__img"
+                      src="https://i.pravatar.cc/300?img=8"
+                      alt="Avatar X-Small"
+                    />
+                  </div>
+                  <span>user01@gmail.com</span>
+                </div>
+                <div class="modal__item">
+                  <div class="avatar avatar--xs">
+                    <img
+                      class="avatar__img"
+                      src="https://i.pravatar.cc/300?img=8"
+                      alt="Avatar X-Small"
+                    />
+                  </div>
+                  <span>user02@gmail.com</span>
+                </div>
+                <div class="modal__item">
+                  <div class="avatar avatar--xs avatar--secondary">
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <span>Add Account</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <pre class="component__code-display"><code class="language-html">   
+    &lt;div class="modal-wrapper"&gt;
+      &lt;div class="modal"&gt;
+        &lt;div class="modal__header"&gt;
+          &lt;h2&gt;Set backup account&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;hr /&gt;
+        &lt;div class="modal__body"&gt;
+          &lt;div class="modal__item"&gt;
+            &lt;div class="avatar avatar--xs"&gt;
+              &lt;img
+                class="avatar__img"
+                src="https://i.pravatar.cc/300?img=8"
+                alt="Avatar X-Small"
+              /&gt;
+            &lt;/div&gt;
+            &lt;span&gt;user01@gmail.com&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class="modal__item"&gt;
+            &lt;div class="avatar avatar--xs"&gt;
+              &lt;img
+                class="avatar__img"
+                src="https://i.pravatar.cc/300?img=8"
+                alt="Avatar X-Small"
+              /&gt;
+            &lt;/div&gt;
+            &lt;span&gt;user02@gmail.com&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class="modal__item"&gt;
+            &lt;div class="avatar avatar--xs avatar--secondary"&gt;
+              &lt;i class="fa fa-plus"&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;span&gt;Add Account&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;                     
+        </code></pre>
+        <h2 class="component__sub-heading">Confirm Modal</h2>
+        <p class="component__sub-description">
+          A Confirmation modal require users to confirm a choice before the
+          dialog is dismissed.
+        </p>
+        <section class="component__display center-main-axis">
+          <button id="btn-confirm-modal" class="btn btn--outline-primary">
+            Live Demo
+          </button>
+          <div id="confirm-modal" class="modal-wrapper">
+            <div class="modal">
+              <div class="modal__header">
+                <h2>Confirm Option</h2>
+              </div>
+              <hr />
+              <form onsubmit="return false">
+                <div class="modal__body">
+                  <label class="modal__item">
+                    <input
+                      type="radio"
+                      name="options"
+                      required
+                      class="modal-input"
+                    />Option 1
+                  </label>
+                  <label class="modal__item">
+                    <input
+                      type="radio"
+                      name="options"
+                      required
+                      class="modal-input"
+                    />Option 2
+                  </label>
+                  <label class="modal__item">
+                    <input
+                      type="radio"
+                      name="options"
+                      required
+                      class="modal-input"
+                    />Option 3
+                  </label>
+                  <label class="modal__item">
+                    <input
+                      type="radio"
+                      name="options"
+                      required
+                      class="modal-input"
+                    />Option 4
+                  </label>
+                  <label class="modal__item">
+                    <input
+                      type="radio"
+                      name="options"
+                      required
+                      class="modal-input"
+                    />Option 5
+                  </label>
+                  <label class="modal__item">
+                    <input
+                      type="radio"
+                      name="options"
+                      required
+                      class="modal-input"
+                    />Option 6
+                  </label>
+                </div>
+                <hr />
+                <div class="modal__footer">
+                  <button class="btn btn--outline-primary">Cancel</button>
+                  <button class="btn btn--primary" type="submit">
+                    Confirm
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <pre class="component__code-display"><code class="language-html"> 
+          &lt;div class="modal-wrapper"&gt;
+            &lt;div class="modal"&gt;
+              &lt;div class="modal__header"&gt;
+                &lt;h2&gt;Confirm Option&lt;/h2&gt;
+              &lt;/div&gt;
+              &lt;hr /&gt;
+              &lt;form onsubmit="return false"&gt;
+                &lt;div class="modal__body"&gt;
+                  &lt;label class="modal__item"&gt;
+                    &lt;input
+                      type="radio"
+                      name="options"
+                      required
+                      class="modal-input"
+                    /&gt;Option 1
+                  &lt;/label&gt;
+                  &lt;label class="modal__item"&gt;
+                    &lt;input
+                      type="radio"
+                      name="options"
+                      required
+                      class="modal-input"
+                    /&gt;Option 2
+                  &lt;/label&gt;
+                  &lt;label class="modal__item"&gt;
+                    &lt;input
+                      type="radio"
+                      name="options"
+                      required
+                      class="modal-input"
+                    /&gt;Option 3
+                  &lt;/label&gt;
+                  &lt;label class="modal__item"&gt;
+                    &lt;input
+                      type="radio"
+                      name="options"
+                      required
+                      class="modal-input"
+                    /&gt;Option 4
+                  &lt;/label&gt;
+                  &lt;label class="modal__item"&gt;
+                    &lt;input
+                      type="radio"
+                      name="options"
+                      required
+                      class="modal-input"
+                    /&gt;Option 5
+                  &lt;/label&gt;
+                  &lt;label class="modal__item"&gt;
+                    &lt;input
+                      type="radio"
+                      name="options"
+                      required
+                      class="modal-input"
+                    /&gt;Option 6
+                  &lt;/label&gt;
+                &lt;/div&gt;
+                &lt;hr /&gt;
+                &lt;div class="modal__footer"&gt;
+                  &lt;button class="btn btn--outline-primary"&gt;Cancel&lt;/button&gt;
+                  &lt;button class="btn btn--primary" type="submit"&gt;
+                    Confirm
+                  &lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/form&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code></pre>
+      </main>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../script.js"></script>
+  </body>
+</html>
