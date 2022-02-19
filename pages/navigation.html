@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pranjal Srivastava" />
+    <link rel="stylesheet" href="../styles/navigation.css" />
+    <title>Navigation | Documentation</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <div class="header__brand flex">
+        <em>
+          <h3>
+            <a href="../index.html">SAPPHIRE UI</a>
+          </h3>
+        </em>
+        <nav class="header__nav flex">
+          <a href="../index.html">Home</a>
+          <a href="./docs.html" class="active">Documentation</a>
+        </nav>
+      </div>
+      <nav class="header__nav flex">
+        <a target="_blank" href="https://twitter.com/srvpranjal">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/pranjal-srivastava-5245381a9/"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://github.com/srv-pranjal">
+          <i class="fa fa-github"></i>
+        </a>
+      </nav>
+    </header>
+    <div class="flex">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <h2>Components</h2>
+          <hr />
+        </div>
+        <div class="sidebar__list flex flex-col">
+          <a class="sidebar__list-item" href="./alert.html" role="button"
+            >Alert</a
+          >
+          <a class="sidebar__list-item" href="./avatar.html" role="button"
+            >Avatar</a
+          >
+          <a class="sidebar__list-item" href="./badge.html" role="button"
+            >Badges</a
+          >
+          <a class="sidebar__list-item" href="./button.html" role="button"
+            >Buttons</a
+          >
+          <a class="sidebar__list-item" href="./card.html" role="button"
+            >Cards</a
+          >
+          <a class="sidebar__list-item" href="./image.html" role="button"
+            >Image</a
+          >
+          <a class="sidebar__list-item" href="./input.html" role="button"
+            >Input</a
+          >
+          <a class="sidebar__list-item" href="./list.html" role="button"
+            >List</a
+          >
+          <a class="sidebar__list-item" href="./modal.html" role="button"
+            >Modal</a
+          >
+          <a
+            class="sidebar__list-item sidebar__list-item--active"
+            href="./navigation.html"
+            role="button"
+            >Navigation</a
+          >
+        </div>
+      </aside>
+      <main class="component">
+        <h1 class="component__heading">Navigation</h1>
+        <p class="component__description">
+          Navigation bar is used to navigate through the web apps or websites.
+        </p>
+        <h2 class="component__sub-heading">Simple Navigation</h2>
+        <p class="component__sub-description">
+          A simple navigation bar can be build by using a <em>nav</em> with
+          class name <span class="highlight">nav</span> wrapped inside a
+          container with class name -
+          <span class="highlight">nav-wrapper</span>. <br />
+          Check out the below code to get started with a simple navigation bar.
+        </p>
+        <section class="component__display center-cross-axis">
+          <header class="nav-wrapper">
+            <h3 class="nav-wrapper__title">MyWebsite</h3>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__list-item">
+                  <a href="#" role="button">Home</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" role="button">Profile</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" role="button">Cart</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" role="button">Wishlist</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;header class="nav-wrapper"&gt;
+      &lt;h3 class="nav-wrapper__title"&gt;MyWebsite&lt;/h3&gt;
+      &lt;nav class="nav"&gt;
+        &lt;ul class="nav__list"&gt;
+          &lt;li class="nav__list-item"&gt;
+            &lt;a href="#" role="button"&gt;Home&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav__list-item"&gt;
+            &lt;a href="#" role="button"&gt;Profile&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav__list-item"&gt;
+            &lt;a href="#" role="button"&gt;Cart&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav__list-item"&gt;
+            &lt;a href="#" role="button"&gt;Wishlist&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+        </code></pre>
+        <h2 class="component__sub-heading">Navigation with Search Bar</h2>
+        <p class="component__sub-description">
+          A navigation bar with search bar can be implemented by including a
+          container with class name -
+          <span class="highlight">nav__search-bar</span> as shown below in the
+          code.
+        </p>
+        <section class="component__display center-cross-axis">
+          <header class="nav-wrapper">
+            <h3 class="nav-wrapper__title">MyWebsite</h3>
+            <nav class="nav">
+              <div class="nav__search-bar">
+                <input
+                  type="text"
+                  class="input input--outlined"
+                  placeholder="Search"
+                />
+                <i class="fa fa-search"></i>
+              </div>
+              <ul class="nav__list">
+                <li class="nav__list-item">
+                  <a href="#" role="button">Home</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" role="button">Profile</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" role="button">Cart</a>
+                </li>
+                <li class="nav__list-item">
+                  <a href="#" role="button">Wishlist</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;header class="nav-wrapper"&gt;
+      &lt;h3 class="nav-wrapper__title"&gt;MyWebsite&lt;/h3&gt;
+      &lt;nav class="nav"&gt;
+        &lt;div class="nav__search-bar"&gt;
+          &lt;input
+            type="text"
+            class="input input--outlined"
+            placeholder="Search"
+          /&gt;
+          &lt;i class="fa fa-search"&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;ul class="nav__list"&gt;
+          &lt;li class="nav__list-item"&gt;
+            &lt;a href="#" role="button"&gt;Home&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav__list-item"&gt;
+            &lt;a href="#" role="button"&gt;Profile&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav__list-item"&gt;
+            &lt;a href="#" role="button"&gt;Cart&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav__list-item"&gt;
+            &lt;a href="#" role="button"&gt;Wishlist&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+        </code></pre>
+      </main>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
