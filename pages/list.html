@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pranjal Srivastava" />
+    <link rel="stylesheet" href="../styles/list.css" />
+    <title>Lists | Documentation</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <div class="header__brand flex">
+        <em>
+          <h3>
+            <a href="../index.html">SAPPHIRE UI</a>
+          </h3>
+        </em>
+        <nav class="header__nav flex">
+          <a href="../index.html">Home</a>
+          <a href="./docs.html" class="active">Documentation</a>
+        </nav>
+      </div>
+      <nav class="header__nav flex">
+        <a target="_blank" href="https://twitter.com/srvpranjal">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/pranjal-srivastava-5245381a9/"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://github.com/srv-pranjal">
+          <i class="fa fa-github"></i>
+        </a>
+      </nav>
+    </header>
+    <div class="flex">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <h2>Components</h2>
+          <hr />
+        </div>
+        <div class="sidebar__list flex flex-col">
+          <a class="sidebar__list-item" href="./alert.html" role="button"
+            >Alert</a
+          >
+          <a class="sidebar__list-item" href="./avatar.html" role="button"
+            >Avatar</a
+          >
+          <a class="sidebar__list-item" href="./badge.html" role="button"
+            >Badges</a
+          >
+          <a class="sidebar__list-item" href="./button.html" role="button"
+            >Buttons</a
+          >
+          <a class="sidebar__list-item" href="./card.html" role="button"
+            >Cards</a
+          >
+          <a class="sidebar__list-item" href="./image.html" role="button"
+            >Image</a
+          >
+          <a class="sidebar__list-item" href="./input.html" role="button"
+            >Input</a
+          >
+          <a
+            class="sidebar__list-item sidebar__list-item--active"
+            href="./list.html"
+            role="button"
+            >List</a
+          >
+          <a class="sidebar__list-item" href="./modal.html" role="button"
+            >Modal</a
+          >
+          <a class="sidebar__list-item" href="./navigation.html" role="button"
+            >Navigation</a
+          >
+        </div>
+      </aside>
+      <main class="component">
+        <h1 class="component__heading">Lists</h1>
+        <p class="component__description">
+          Lists can be used at navigation bar, stacked notifications, article
+          pages, etc.
+        </p>
+        <h2 class="component__sub-heading">Stacked Lists</h2>
+        <p class="component__sub-description">
+          A Stacked List can be implemented with a <em>ul</em> tag having class
+          name - <span class="highlight">list</span> having items with class
+          name - <span class="highlight">list__item</span>. <br />
+          Checkout the below code for implementing a stacked list for
+          notifications.
+        </p>
+        <section class="component__display center-main-axis">
+          <ul class="list">
+            <li class="list__item">
+              <div class="list__notification">
+                <div class="avatar avatar--xs">
+                  <img
+                    class="avatar__img"
+                    src="https://i.pravatar.cc/300?img=8"
+                    alt="Avatar X-Small"
+                  />
+                </div>
+                <p>John commented on a post you are tagged in.</p>
+              </div>
+            </li>
+            <li class="list__item">
+              <div class="list__notification">
+                <div class="avatar avatar--xs">
+                  <img
+                    class="avatar__img"
+                    src="https://i.pravatar.cc/300?img=8"
+                    alt="Avatar X-Small"
+                  />
+                </div>
+                <p>John commented on a post you are tagged in.</p>
+              </div>
+            </li>
+            <li class="list__item">
+              <div class="list__notification">
+                <div class="avatar avatar--xs">
+                  <img
+                    class="avatar__img"
+                    src="https://i.pravatar.cc/300?img=8"
+                    alt="Avatar X-Small"
+                  />
+                </div>
+                <p>John commented on a post you are tagged in.</p>
+              </div>
+            </li>
+            <li class="list__item">
+              <div class="list__notification">
+                <div class="avatar avatar--xs">
+                  <img
+                    class="avatar__img"
+                    src="https://i.pravatar.cc/300?img=8"
+                    alt="Avatar X-Small"
+                  />
+                </div>
+                <p>John commented on a post you are tagged in.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;ul class="list"&gt;
+        &lt;li class="list__item"&gt;
+            &lt;div class="list__notification"&gt;
+            &lt;div class="avatar avatar--xs"&gt;
+                &lt;img
+                class="avatar__img"
+                src="https://i.pravatar.cc/300?img=8"
+                alt="Avatar X-Small"
+                /&gt;
+            &lt;/div&gt;
+            &lt;p&gt;John commented on a post you are tagged in.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="list__item"&gt;
+            &lt;div class="list__notification"&gt;
+            &lt;div class="avatar avatar--xs"&gt;
+                &lt;img
+                class="avatar__img"
+                src="https://i.pravatar.cc/300?img=8"
+                alt="Avatar X-Small"
+                /&gt;
+            &lt;/div&gt;
+            &lt;p&gt;John commented on a post you are tagged in.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="list__item"&gt;
+            &lt;div class="list__notification"&gt;
+            &lt;div class="avatar avatar--xs"&gt;
+                &lt;img
+                class="avatar__img"
+                src="https://i.pravatar.cc/300?img=8"
+                alt="Avatar X-Small"
+                /&gt;
+            &lt;/div&gt;
+            &lt;p&gt;John commented on a post you are tagged in.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="list__item"&gt;
+            &lt;div class="list__notification"&gt;
+            &lt;div class="avatar avatar--xs"&gt;
+                &lt;img
+                class="avatar__img"
+                src="https://i.pravatar.cc/300?img=8"
+                alt="Avatar X-Small"
+                /&gt;
+            &lt;/div&gt;
+            &lt;p&gt;John commented on a post you are tagged in.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;/ul&gt;
+        </code></pre>
+        <h2 class="component__sub-heading">Spaced Lists</h2>
+        <p class="component__sub-description">
+          A Spaced List can be implemented with a <em>ul</em> tag having class
+          name - <span class="highlight">list</span> along with class -
+          <span class="highlight">list--spaced</span> for having spaces between
+          list items. <br />
+          Checkout the below code for implementing a spaced list for
+          notifications.
+        </p>
+        <section class="component__display center-main-axis">
+          <ul class="list list--spaced">
+            <li class="list__item">
+              <div class="list__notification">
+                <div class="avatar avatar--xs">
+                  <img
+                    class="avatar__img"
+                    src="https://i.pravatar.cc/300?img=8"
+                    alt="Avatar X-Small"
+                  />
+                </div>
+                <p>John commented on a post you are tagged in.</p>
+              </div>
+            </li>
+            <li class="list__item">
+              <div class="list__notification">
+                <div class="avatar avatar--xs">
+                  <img
+                    class="avatar__img"
+                    src="https://i.pravatar.cc/300?img=8"
+                    alt="Avatar X-Small"
+                  />
+                </div>
+                <p>John commented on a post you are tagged in.</p>
+              </div>
+            </li>
+            <li class="list__item">
+              <div class="list__notification">
+                <div class="avatar avatar--xs">
+                  <img
+                    class="avatar__img"
+                    src="https://i.pravatar.cc/300?img=8"
+                    alt="Avatar X-Small"
+                  />
+                </div>
+                <p>John commented on a post you are tagged in.</p>
+              </div>
+            </li>
+            <li class="list__item">
+              <div class="list__notification">
+                <div class="avatar avatar--xs">
+                  <img
+                    class="avatar__img"
+                    src="https://i.pravatar.cc/300?img=8"
+                    alt="Avatar X-Small"
+                  />
+                </div>
+                <p>John commented on a post you are tagged in.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;ul class="list list--spaced"&gt;
+      &lt;li class="list__item"&gt;
+        &lt;div class="list__notification"&gt;
+          &lt;div class="avatar avatar--xs"&gt;
+            &lt;img
+              class="avatar__img"
+              src="https://i.pravatar.cc/300?img=8"
+              alt="Avatar X-Small"
+            /&gt;
+          &lt;/div&gt;
+          &lt;p&gt;John commented on a post you are tagged in.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="list__item"&gt;
+        &lt;div class="list__notification"&gt;
+          &lt;div class="avatar avatar--xs"&gt;
+            &lt;img
+              class="avatar__img"
+              src="https://i.pravatar.cc/300?img=8"
+              alt="Avatar X-Small"
+            /&gt;
+          &lt;/div&gt;
+          &lt;p&gt;John commented on a post you are tagged in.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="list__item"&gt;
+        &lt;div class="list__notification"&gt;
+          &lt;div class="avatar avatar--xs"&gt;
+            &lt;img
+              class="avatar__img"
+              src="https://i.pravatar.cc/300?img=8"
+              alt="Avatar X-Small"
+            /&gt;
+          &lt;/div&gt;
+          &lt;p&gt;John commented on a post you are tagged in.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="list__item"&gt;
+        &lt;div class="list__notification"&gt;
+          &lt;div class="avatar avatar--xs"&gt;
+            &lt;img
+              class="avatar__img"
+              src="https://i.pravatar.cc/300?img=8"
+              alt="Avatar X-Small"
+            /&gt;
+          &lt;/div&gt;
+          &lt;p&gt;John commented on a post you are tagged in.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+        </code></pre>
+      </main>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
