@@ -1,0 +1,36 @@
+@import "./main.css";
+@import "./input.css";
+@import "./badge.css";
+
+.wrapper {
+  background-color: var(--primary-color);
+  color: var(--complimentary-text-color);
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  height: 3.5rem;
+}
+.nav {
+  margin-left: auto;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav__list-item:hover {
+  text-decoration: underline;
+}
+.nav__search-bar {
+  position: relative;
+}
+.nav__search-bar i {
+  color: var(--secondary-color);
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
