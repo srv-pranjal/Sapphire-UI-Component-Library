@@ -10,6 +10,9 @@
   </head>
   <body>
     <header class="header flex">
+      <a class="header__hamburger" role="button">
+        <i class="fa fa-bars header__menu"></i>
+      </a>
       <div class="header__brand flex">
         <em>
           <h3>
@@ -38,6 +41,14 @@
     </header>
     <div class="flex">
       <aside class="sidebar">
+        <div class="sidebar__list flex flex-col sidebar__submenu">
+          <a class="sidebar__list-item" href="../index.html" role="button"
+            >Home</a
+          >
+          <a class="sidebar__list-item" href="./docs.html" role="button"
+            >Documentation</a
+          >
+        </div>
         <div class="sidebar__header">
           <h2>Components</h2>
           <hr />
@@ -207,5 +218,6 @@
     <script>
       hljs.highlightAll();
     </script>
+    <script src="../scripts/header.js"></script>
   </body>
 </html>

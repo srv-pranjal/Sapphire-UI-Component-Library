@@ -11,6 +11,8 @@
   width: 100%;
   padding: 1rem 1.5rem;
   height: 3.5rem;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .nav {
   margin-left: auto;
