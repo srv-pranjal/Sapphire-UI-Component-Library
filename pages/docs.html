@@ -14,6 +14,9 @@
   </head>
   <body>
     <header class="header flex">
+      <a class="header__hamburger" role="button">
+        <i class="fa fa-bars header__menu"></i>
+      </a>
       <div class="header__brand flex">
         <em>
           <h3>
@@ -42,6 +45,17 @@
     </header>
     <div class="flex">
       <aside class="sidebar">
+        <div class="sidebar__list flex flex-col sidebar__submenu">
+          <a class="sidebar__list-item" href="../index.html" role="button"
+            >Home</a
+          >
+          <a
+            class="sidebar__list-item sidebar__list-item--active"
+            href="./docs.html"
+            role="button"
+            >Documentation</a
+          >
+        </div>
         <div class="sidebar__header">
           <h2>Components</h2>
           <hr />
@@ -79,26 +93,28 @@
           >
         </div>
       </aside>
-      <main>
-        <div class="component">
-          <h1 class="component__heading">Getting Started</h1>
-          <p class="component__description">
-            To use the available components in your project, simply import (copy) the given stylesheet in your css or html file.
-          </p>
-          <h2 class="component__sub-heading">All components CSS - HTML link tag</h2>
-          <pre class="component__code-display"><code class="language-html">
+      <main class="component">
+        <h1 class="component__heading">Getting Started</h1>
+        <p class="component__description">
+          To use the available components in your project, simply import (copy)
+          the given stylesheet in your css or html file.
+        </p>
+        <h2 class="component__sub-heading">
+          All components CSS - HTML link tag
+        </h2>
+        <pre class="component__code-display"><code class="language-html">
     &lt;link rel="stylesheet" href="https://sapphireui.netlify.app/styles/sapphireui.css"&gt;
           </code></pre>
-          <h2 class="component__sub-heading">All components CSS - import url</h2>
-          <pre class="component__code-display"><code class="language-css">
+        <h2 class="component__sub-heading">All components CSS - import url</h2>
+        <pre class="component__code-display"><code class="language-css">
     @import url("https://sapphireui.netlify.app/styles/sapphireui.css");
           </code></pre>
-        </div>
       </main>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
       hljs.highlightAll();
     </script>
+    <script src="../scripts/header.js"></script>
   </body>
 </html>

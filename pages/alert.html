@@ -5,20 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Pranjal Srivastava" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/tomorrow-night-blue.min.css
-      "
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link rel="stylesheet" href="../styles/alert.css" />
     <title>Alert | Documentation</title>
   </head>
   <body>
     <header class="header flex">
+      <a class="header__hamburger" role="button">
+        <i class="fa fa-bars header__menu"></i>
+      </a>
       <div class="header__brand flex">
         <em>
           <h3>
@@ -47,12 +41,23 @@
     </header>
     <div class="flex">
       <aside class="sidebar">
+        <div class="sidebar__list flex flex-col sidebar__submenu">
+          <a class="sidebar__list-item" href="../index.html" role="button"
+            >Home</a
+          >
+          <a class="sidebar__list-item" href="./docs.html" role="button"
+            >Documentation</a
+          >
+        </div>
         <div class="sidebar__header">
           <h2>Components</h2>
           <hr />
         </div>
         <div class="sidebar__list flex flex-col">
-          <a class="sidebar__list-item sidebar__list-item--active" href="./alert.html" role="button"
+          <a
+            class="sidebar__list-item sidebar__list-item--active"
+            href="./alert.html"
+            role="button"
             >Alert</a
           >
           <a class="sidebar__list-item" href="./avatar.html" role="button"
@@ -202,7 +207,7 @@
           <span class="highlight">alert__btn-close</span> as shown in the code
           snippet below.
         </p>
-        <section class="component__display flex-col">
+        <section class="component__display center-main-axis">
           <div class="alert alert--success" role="alert">
             <i class="fa fa-check-circle"></i>
             A sucess alert with close button
@@ -222,5 +227,6 @@
     <script>
       hljs.highlightAll();
     </script>
+    <script src="../scripts/header.js"></script>
   </body>
 </html>
