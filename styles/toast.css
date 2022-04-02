@@ -1,0 +1,40 @@
+@import "./main.css";
+
+.toast {
+  background-color: var(--dark-secondary-color);
+  color: var(--complimentary-text-color);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  position: fixed;
+  z-index: 6;
+  bottom: 1rem;
+  width: 90%;
+  max-width: 25rem;
+}
+.toast__txt {
+  font-size: 0.85rem;
+}
+.toast .btn {
+  letter-spacing: 0.1rem;
+  margin-left: auto;
+  color: var(--light-primary-color);
+}
+.toast__btn-close {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.toast--left {
+  left: 1rem;
+}
+.toast--right {
+  right: 1rem;
+}
+/* --- Demo Toasts --- */
+#toast--left,
+#toast--right,
+#toast--demo {
+  display: none;
+}

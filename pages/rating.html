@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Pranjal Srivastava" />
+    <link rel="stylesheet" href="../styles/rating.css" />
+    <title>Rating | Documentation</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <a class="header__hamburger" role="button">
+        <i class="fa fa-bars header__menu"></i>
+      </a>
+      <div class="header__brand flex">
+        <em>
+          <h3>
+            <a href="../index.html">SAPPHIRE UI</a>
+          </h3>
+        </em>
+        <nav class="header__nav flex">
+          <a href="../index.html">Home</a>
+          <a href="./docs.html" class="active">Documentation</a>
+        </nav>
+      </div>
+      <nav class="header__nav flex">
+        <a target="_blank" href="https://twitter.com/srvpranjal">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/pranjal-srivastava-5245381a9/"
+        >
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://github.com/srv-pranjal">
+          <i class="fa fa-github"></i>
+        </a>
+      </nav>
+    </header>
+    <div class="flex">
+      <aside class="sidebar">
+        <div class="sidebar__list flex flex-col sidebar__submenu">
+          <a class="sidebar__list-item" href="../index.html" role="button"
+            >Home</a
+          >
+          <a class="sidebar__list-item" href="./docs.html" role="button"
+            >Documentation</a
+          >
+        </div>
+        <div class="sidebar__header">
+          <h2>Components</h2>
+          <hr />
+        </div>
+        <div class="sidebar__list flex flex-col">
+          <a class="sidebar__list-item" href="./alert.html" role="button"
+            >Alert</a
+          >
+          <a class="sidebar__list-item" href="./avatar.html" role="button"
+            >Avatar</a
+          >
+          <a class="sidebar__list-item" href="./badge.html" role="button"
+            >Badges</a
+          >
+          <a class="sidebar__list-item" href="./button.html" role="button"
+            >Buttons</a
+          >
+          <a class="sidebar__list-item" href="./card.html" role="button"
+            >Cards</a
+          >
+          <a class="sidebar__list-item" href="./grid.html" role="button"
+            >Grid</a
+          >
+          <a class="sidebar__list-item" href="./image.html" role="button"
+            >Image</a
+          >
+          <a class="sidebar__list-item" href="./input.html" role="button"
+            >Input</a
+          >
+          <a class="sidebar__list-item" href="./list.html" role="button"
+            >List</a
+          >
+          <a class="sidebar__list-item" href="./modal.html" role="button"
+            >Modal</a
+          >
+          <a class="sidebar__list-item" href="./navigation.html" role="button"
+            >Navigation</a
+          >
+          <a
+            class="sidebar__list-item sidebar__list-item--active"
+            href="./rating.html"
+            role="button"
+            >Rating</a
+          >
+          <a class="sidebar__list-item" href="./toast.html" role="button"
+            >Toast</a
+          >
+          <a class="sidebar__list-item" href="./typography.html" role="button"
+            >Typography</a
+          >
+        </div>
+      </aside>
+      <main class="component">
+        <h1 class="component__heading">Rating</h1>
+        <p class="component__description">
+          Rating can be used to show ratings on the product, or it can also be
+          used for taking ratings from the user on an e-commerce website.
+        </p>
+        <h2 class="component__sub-heading">Static Rating</h2>
+        <p class="component__sub-description">
+          A Static rating, to display rating of a product, can be built by using
+          the class name - <span class="highlight">rating</span>. Selected stars
+          are to be given the class -
+          <span class="highlight">rating__star--selected</span> and rest are to
+          be given  -
+          <span class="highlight">rating__star--disabled</span> along with the
+          default class name - <span class="highlight">rating__star</span>.
+          Check out the below implementation of a Static Rating.
+        </p>
+        <section class="component__display center-main-axis">
+          <div class="rating">
+            <label>
+              <i class="fa fa-star rating__star rating__star--selected"></i>
+            </label>
+            <label>
+              <i class="fa fa-star rating__star rating__star--selected"></i>
+            </label>
+            <label>
+              <i class="fa fa-star rating__star rating__star--selected"></i>
+            </label>
+            <label>
+              <i class="fa fa-star rating__star rating__star--disabled"></i>
+            </label>
+            <label>
+              <i class="fa fa-star rating__star rating__star--disabled"></i>
+            </label>
+          </div>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;div class="rating"&gt;
+        &lt;label&gt;
+            &lt;i class="fa fa-star rating__star rating__star--selected"&gt;&lt;/i&gt;
+        &lt;/label&gt;
+        &lt;label&gt;
+            &lt;i class="fa fa-star rating__star rating__star--selected"&gt;&lt;/i&gt;
+        &lt;/label&gt;
+        &lt;label&gt;
+            &lt;i class="fa fa-star rating__star rating__star--selected"&gt;&lt;/i&gt;
+        &lt;/label&gt;
+        &lt;label&gt;
+            &lt;i class="fa fa-star rating__star rating__star--disabled"&gt;&lt;/i&gt;
+        &lt;/label&gt;
+        &lt;label&gt;
+            &lt;i class="fa fa-star rating__star rating__star--disabled"&gt;&lt;/i&gt;
+        &lt;/label&gt;
+    &lt;/div&gt;
+        </code></pre>
+
+        <h2 class="component__sub-heading">Live Rating</h2>
+        <p class="component__sub-description">
+          A Live rating, to take feedback, can be built by using the class name
+          - <span class="highlight">rating--live</span> along with the default
+          class name - <span class="highlight">rating</span>. Check out the
+          below implementation of a Live Rating.
+        </p>
+        <section class="component__display center-main-axis">
+          <div id="example-rating" class="rating rating--live">
+            <label>
+              <i class="fa fa-star rating__star rating__star--selected"></i>
+            </label>
+            <label>
+              <i class="fa fa-star rating__star rating__star--selected"></i>
+            </label>
+            <label>
+              <i class="fa fa-star rating__star rating__star--disabled"></i>
+            </label>
+            <label>
+              <i class="fa fa-star rating__star rating__star--disabled"></i>
+            </label>
+            <label>
+              <i class="fa fa-star rating__star rating__star--disabled"></i>
+            </label>
+          </div>
+        </section>
+        <pre class="component__code-display"><code class="language-html">
+    &lt;div id="example-rating" class="rating rating--live"&gt;
+        &lt;label&gt;
+            &lt;i class="fa fa-star rating__star rating__star--selected"&gt;&lt;/i&gt;
+        &lt;/label&gt;
+        &lt;label&gt;
+            &lt;i class="fa fa-star rating__star rating__star--selected"&gt;&lt;/i&gt;
+        &lt;/label&gt;
+        &lt;label&gt;
+            &lt;i class="fa fa-star rating__star rating__star--disabled"&gt;&lt;/i&gt;
+        &lt;/label&gt;
+        &lt;label&gt;
+            &lt;i class="fa fa-star rating__star rating__star--disabled"&gt;&lt;/i&gt;
+        &lt;/label&gt;
+        &lt;label&gt;
+            &lt;i class="fa fa-star rating__star rating__star--disabled"&gt;&lt;/i&gt;
+        &lt;/label&gt;
+    &lt;/div&gt;
+        </code></pre>
+      </main>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <script src="../scripts/header.js"></script>
+    <script src="../scripts/rating.js"></script>
+  </body>
+</html>

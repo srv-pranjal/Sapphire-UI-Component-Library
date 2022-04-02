@@ -1,0 +1,20 @@
+@import "./main.css";
+
+.rating {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+}
+.rating__star--disabled {
+  color: var(--transparent-background-color);
+}
+.rating__star--selected {
+  color: var(--dark-warning-color);
+}
+/* --- Live Rating --- */
+.rating--live .rating__star:hover {
+  color: var(--warning-color);
+}
+.rating--live .rating__star {
+  cursor: pointer;
+}
