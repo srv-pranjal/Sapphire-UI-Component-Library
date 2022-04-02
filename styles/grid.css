@@ -1,0 +1,33 @@
+@import "./main.css";
+
+.grid {
+  display: grid;
+  width: 100%;
+}
+.grid__item {
+  background-color: var(--primary-color);
+  color: var(--complimentary-text-color);
+  text-align: center;
+  padding: 2rem;
+}
+/* --- Grid Gap --- */
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+/* --- Grid with Columns --- */
+.grid-col-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-col-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+/* --- Grid with Rows --- */
+.grid-row-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+.grid-row-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}

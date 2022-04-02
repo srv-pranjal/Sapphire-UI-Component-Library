@@ -181,7 +181,7 @@
     display: none;
     position: fixed;
     background-color: var(--white-color);
-    min-width: 10rem;
+    min-width: 15rem;
   }
   .sidebar__list {
     height: calc(100vh - 15rem);
