@@ -48,7 +48,7 @@
 }
 /* --- Sidebar --- */
 .sidebar {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 0;
   height: calc(100vh - 3.5rem);
   box-shadow: 1px 5px 5px var(--secondary-color);
   position: sticky;
@@ -58,13 +58,24 @@
 .sidebar__header {
   margin: 0.5rem 0;
 }
+.sidebar__header h2 {
+  padding: 0 2rem;
+}
+.sidebar__header hr {
+  width: 75%;
+  margin: auto;
+}
 .sidebar__list {
   gap: 0.5rem;
   font-size: 1rem;
+  height: 80vh;
+  overflow-y: auto;
+  padding-bottom: 1rem;
 }
 .sidebar__list-item {
   text-align: center;
-  width: 100%;
+  width: 75%;
+  margin: auto;
   padding: 0.5rem 0.5rem;
   border-radius: 0 25px 25px 0;
   font-size: 1.1rem;
@@ -81,7 +92,12 @@
 }
 .sidebar__submenu {
   margin-top: 0.5rem;
+  max-height: 6rem;
+  overflow: hidden;
   display: none;
+}
+.sidebar__submenu .sidebar__list-item {
+  margin: 0 auto;
 }
 /* --- Landing Page --- */
 .landing-page {
@@ -113,7 +129,7 @@
   padding: 1rem 3rem;
   flex-grow: 1;
   overflow: auto;
-  height: calc(100vh-3.5rem);
+  height: calc(100vh - 3.5rem);
   color: var(--secondary-color);
 }
 .component__heading {
@@ -166,7 +182,9 @@
     position: fixed;
     background-color: var(--white-color);
     min-width: 15rem;
-    padding: 0.5rem 1.5rem;
+  }
+  .sidebar__list {
+    height: calc(100vh - 15rem);
   }
   .sidebar__submenu {
     display: flex;
